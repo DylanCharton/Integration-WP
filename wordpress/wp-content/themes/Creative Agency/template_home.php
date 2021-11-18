@@ -4,8 +4,8 @@ require_once('header.php');
 ?>
 
 <?php
-the_title();
-the_content();
+// the_title();
+// the_content();
 ?>
 
 <?php 
