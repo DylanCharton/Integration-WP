@@ -23,7 +23,6 @@ the_content();
     <div id="containerBlock" class="container">
         <div class="row">
         <?php
-            
             if(get_field('bloc')){
                 while(the_repeater_field('bloc')){
                     echo '<div class="col-md-3 features">';
@@ -37,6 +36,34 @@ the_content();
         </div>
     </div>
 </section>
+
+
+
+<section id="section4">          
+
+    <?php 
+        // the query
+        $the_query = new WP_Query( array(
+            'category_name' => '',
+            'posts_per_page' => 4,
+        )); 
+    ?>
+
+<?php if ( $the_query->have_posts() ) : ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+    <?php the_title(); ?>
+    <?php the_excerpt(); ?>
+
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
+
+<?php else : ?>
+  <p><?php __('No News'); ?></p>
+<?php endif; ?>
+
+</section>
+
 
 <?php 
 
