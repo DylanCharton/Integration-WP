@@ -70,6 +70,44 @@ Version: 1.0
     text-align: justify;
 }
 
+.article img{
+    height: 280px;
+    width: 280px;
+    object-fit: fill;
+    margin-bottom: 2rem ;
+}
+
+.article p{
+    text-align: center;
+}
+
+.titleArticle{
+    color: #d21242;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#section4{
+    padding: 4rem 0;
+}
+
+#letterBlock2 p {
+    color: #d21242;
+    font-size: 150px;
+    font-weight: 800;
+    width: fit-content;
+    font-family: robotoblack;
+}
+
+#titleBlock2 {
+    color: black;
+    width: fit-content;
+    position: absolute;
+    font-size: 25px;
+    transform: translateY(275%);
+}
+
 @media screen and (max-width:750px){
     #titleBlock1 {
         color: white;

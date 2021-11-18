@@ -1,13 +1,7 @@
 <?php 
 /* Template name: Homepage */
-require_once('header.php');
+get_header();
 ?>
-
-<?php
-the_title();
-the_content();
-?>
-
 
 <section id="section2">
     <div class="container">
@@ -39,8 +33,7 @@ the_content();
 
 
 
-<section id="section4">          
-
+<section id="section4">         
     <?php 
         // the query
         $the_query = new WP_Query( array(
@@ -48,25 +41,41 @@ the_content();
             'posts_per_page' => 4,
         )); 
     ?>
+<div class="container"> 
+    <div class="row">
+        <div id="letterBlock2">
+            <div id="titleBlock2">
+                <?= get_field('title_section2');?>
+            </div>
+                <p><?= get_field('letter_section2')?></p>
+        </div>
+    </div>
+</div>
 
-<?php if ( $the_query->have_posts() ) : ?>
-  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+<div class="container">
+    <div class="row">
+        <?php
+        if($the_query->have_posts()){
+            while($the_query->have_posts()){
+                $the_query->the_post();
+                echo '<div class="article col-md-3">';
+                echo '<img src="'.get_field('img_article').'"/>';
+                echo '<div class="titleArticle">'.get_the_title().'</div>';
+                the_excerpt();
+                echo '</div>';
+            }
+            wp_reset_postdata(); 
+        }else{
+            __('No News');
+        }
+        ?>
+    </div>
+</div>
 
-    <?php the_title(); ?>
-    <?php the_excerpt(); ?>
-
-  <?php endwhile; ?>
-  <?php wp_reset_postdata(); ?>
-
-<?php else : ?>
-  <p><?php __('No News'); ?></p>
-<?php endif; ?>
-
+    
 </section>
 
 
 <?php 
-
-require_once('footer.php');
-
+get_footer();
 ?>
