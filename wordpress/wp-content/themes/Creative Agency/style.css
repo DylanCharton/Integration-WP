@@ -6,3 +6,13 @@ Author URI: https://www.accesscodeschool.fr/
 Description: Thème intégré par Tommy, Alaeddin et Dylan
 Version: 1.0
 */
+
+/* SECTION 1 */
+
+#title-section1{
+    font-size: 10rem;
+}
+#hero-section{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
