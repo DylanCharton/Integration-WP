@@ -1,6 +1,6 @@
 <?php 
 /* Template name: Homepage */
-require_once('header.php');
+get_header();
 ?>
 
 <?php
@@ -9,7 +9,7 @@ the_content();
 ?>
 
 <?php 
-
-require_once('footer.php');
+    
+get_footer();
 
 ?>

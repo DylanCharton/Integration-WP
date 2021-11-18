@@ -6,3 +6,76 @@ Author URI: https://www.accesscodeschool.fr/
 Description: Thème intégré par Tommy, Alaeddin et Dylan
 Version: 1.0
 */
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#letterBlock1 {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#letterBlock1 p {
+    color: white;
+    opacity: 0.3;
+    font-size: 150px;
+    font-weight: 800;
+    width: fit-content;
+    font-family: robotoblack;
+}
+
+#titleBlock1 {
+    color: white;
+    width: fit-content;
+    position: absolute;
+    font-size: 25px;
+    transform: translateY(275%);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.features img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#titleBloc {
+    margin: 50px 0;
+}
+
+#descriptionBloc {
+    margin-bottom: 50px;
+}
+
+#section2 {
+    background-color: #d21242;
+    padding: 50px;
+}
+
+#containerBlock{
+    text-align: justify;
+}
+
+@media screen and (max-width:750px){
+    #titleBlock1 {
+        color: white;
+        width: fit-content;
+        position: absolute;
+        transform: translateY(430%);
+        font-size: 17px;
+    }
+}
