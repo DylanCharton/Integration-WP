@@ -63,3 +63,47 @@ function custom_post_type_projets() {
 }
 
 add_action( 'init', 'custom_post_type_projets', 0 );
+		/*
+		 * Switch default core markup for search form, comment form, and comments
+		 * to output valid HTML5.
+		 */
+		add_theme_support(
+			'html5',
+			array(
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+				'style',
+				'script',
+				'navigation-widgets',
+			)
+		);
+// Add theme support for selective refresh for widgets.
+add_theme_support( 'customize-selective-refresh-widgets' );
+
+
+/**
+ * Register widget area.
+ *
+ * @since Creative Agency 1.0
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ *
+ * @return void
+ */
+function creative_agency_widgets_init() {
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer', 'Creative Agency' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Rajoutez des widgets pour le pied-de-page.', 'Creative Agency' ),
+			'before_widget' => '<section id="footer-w" class="widget footer-w">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+}
+add_action( 'widgets_init', 'creative_agency_widgets_init' );
