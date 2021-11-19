@@ -69,7 +69,7 @@ get_header();
                 echo '<div class="article">';
                 echo '<img src="'.get_field('img_article').'"/>';
                 echo '<div class="titleArticle">'.get_the_title().'</div>';
-                echo get_field('description_article');
+                echo '<div class="descriptionArticle">'.get_field('description_article').'</div>';
                 // echo get_the_ID();
                 echo '</div>';
                 echo '</a>';
@@ -81,6 +81,17 @@ get_header();
         ?>
     </div>
 </div>   
+</section>
+
+
+<section id="section5">
+    <!-- ajout de ma nouvelle widget area -->
+    <?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
+        <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+            <?php dynamic_sidebar( 'new-widget-area' ); ?>
+        </div>
+    <?php endif; ?>
+<!-- fin nouvelle widget area -->
 </section>
 
 <?php 

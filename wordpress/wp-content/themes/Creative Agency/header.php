@@ -20,6 +20,5 @@ wp_nav_menu ( array (
 ) ); ?>
 <?php endif;
 ?>
-    
 </body>
 </html>
