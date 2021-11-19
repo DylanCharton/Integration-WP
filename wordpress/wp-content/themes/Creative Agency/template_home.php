@@ -42,7 +42,6 @@ get_header();
         )); 
     ?>
 
-
 <div class="container">
     <div class="row">
         <div id="letterBlock4">
@@ -65,14 +64,14 @@ get_header();
                 $the_query->the_post();
                 // echo wp_count_posts();
                 $link = get_the_permalink();
-                echo '<a class="linkArticle col-md-3" href='.$link.' target="_blank">';
-                echo '<div class="article">';
+                echo '<div class="article col-md-3">';
                 echo '<img src="'.get_field('img_article').'"/>';
+                echo '<a  href='.$link.' target="_blank">';
                 echo '<div class="titleArticle">'.get_the_title().'</div>';
+                echo '</a>';
                 echo '<div class="descriptionArticle">'.get_field('description_article').'</div>';
                 // echo get_the_ID();
                 echo '</div>';
-                echo '</a>';
             }
             wp_reset_postdata(); 
         }else{
@@ -90,7 +89,7 @@ get_header();
             <div class="col-md-6">
             <!-- ajout de ma nouvelle widget area -->
             <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
-                    <div id="header-widget-area-left" class="nwa-header-widget widget-area" role="complementary">
+                    <div id="header-widget-area-left" class="nwa-header-widget widget-area row" role="complementary">
                         <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
                     </div>
                 <?php endif; ?>
@@ -99,7 +98,7 @@ get_header();
             <div class="col-md-6">
                 <!-- ajout de ma nouvelle widget area -->
                 <?php if ( is_active_sidebar( 'new-widget-area-right' ) ) : ?>
-                    <div id="header-widget-area-right" class="nwa-header-widget widget-area" role="complementary">
+                    <div id="header-widget-area-right" class="nwa-header-widget widget-area row" role="complementary">
                         <?php dynamic_sidebar( 'new-widget-area-right' ); ?>
                     </div>
                 <?php endif; ?>

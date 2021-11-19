@@ -94,10 +94,14 @@ Version: 1.0
     justify-content: center;
     margin-bottom: 2rem;
 }
+
+.titleArticle:hover{
+    text-decoration-line: underline;
+}
 .descriptionArticle{
     margin-bottom: 2rem;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     text-align: justify;
 }
 
@@ -183,4 +187,12 @@ a:hover{
 .nwa-header-widget img{
     height: 30px;
     width: 30px;
+}
+
+.nwa-widget{
+    width: fit-content;
+}
+
+#footer{
+    background-color: #222222;
 }
