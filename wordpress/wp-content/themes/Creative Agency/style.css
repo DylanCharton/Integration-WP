@@ -89,3 +89,35 @@ Version: 1.0
         font-size: 17px;
     }
 }
+
+/* PROJECT PAGES */
+
+.carousel-item{
+    height : 30rem;
+    width : 50rem;
+}
+
+.carousel-item img{
+    object-fit :contain;
+}
+
+#section3{
+    height : 100vh;
+}
+
+.img-projects img{
+    /* height: 3rem; */
+    width: 100%;
+}
+
+#section3:nth-child(odd) #projects-wrapper:first-child .img-projects{
+    order: 2;
+}
+#section3:nth-child(odd) #projects-wrapper:first-child {
+    order: 1;
+    background-color: #222222;
+    color : #fff
+}
+#projects-wrapper:last-of-type{
+    background-color: #f3f3f3;
+}
