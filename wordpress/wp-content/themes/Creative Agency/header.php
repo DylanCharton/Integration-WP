@@ -13,21 +13,10 @@
 </head>
 
 <body>
-
-<?php
-if ( has_nav_menu( 'header-menu' ) ) : ?>
-<?php
-wp_nav_menu ( array (
-'theme_location' => 'header-menu' ,
-'container'      => 'nav',
-'menu_class'     => 'right no-bullets no-margin',
-) ); ?>
-<?php endif;
-?>
   <!-- NAV BAR -->
 
-  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"> <img class="site-img" src="<?= get_site_icon_url()?>" >
-    <div class="container-fluid d-flex contain-tom">  
+  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"><img class="site-img" src="<?= get_site_icon_url()?>" >
+    <div class="container-fluid d-flex container-tom">  
 
     
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
