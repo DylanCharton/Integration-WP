@@ -17,7 +17,7 @@
   <!-- NAV BAR -->
 
   <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"> <img class="site-img" src="<?= get_site_icon_url()?>" >
-    <div class="container-fluid d-flex contain-tom">  
+    <div class="container-fluid d-flex container-tom">  
 
     
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
