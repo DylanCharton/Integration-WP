@@ -111,12 +111,12 @@ add_action( 'widgets_init', 'creative_agency_widgets_init' );
 
 // Area Widjets section 5
 
-function section5_zone1_widgets_init() {
+function section5_left_widgets_init() {
  
 	register_sidebar( array(
    
-	'name' => 'Zone widgets section 5',
-	'id' => 'new-widget-area',
+	'name' => 'Zone widgets section 5 Left',
+	'id' => 'new-widget-area-left',
 	'before_widget' => '<div class="nwa-widget">',
 	'after_widget' => '</div>',
 	'before_title' => '<h2 class="nwa-title">',
@@ -124,19 +124,19 @@ function section5_zone1_widgets_init() {
 	) );
    }
    
-add_action( 'widgets_init', 'section5_zone1_widgets_init' );
+add_action( 'widgets_init', 'section5_left_widgets_init' );
 
-function section5_zone2_widgets_init() {
+function section5_right_widgets_init() {
  
 	register_sidebar( array(
    
-	'name' => 'Zone widgets section 5',
-	'id' => 'new-widget-area',
-	'before_widget' => '<div class="nwa-widget">',
+	'name' => 'Zone widgets section 5 Right',
+	'id' => 'new-widget-area-right',
+	'before_widget' => '<div class="nwa-widget col-6">',
 	'after_widget' => '</div>',
 	'before_title' => '<h2 class="nwa-title">',
 	'after_title' => '</h2>',
 	) );
    }
    
-add_action( 'widgets_init', 'section5_zone2_widgets_init' );
+add_action( 'widgets_init', 'section5_right_widgets_init' );

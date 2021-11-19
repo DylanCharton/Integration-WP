@@ -170,16 +170,17 @@ a:hover{
     color: black;
 }
 
-.nwa-header-widget{
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding: 2em;
-    text-align: center;
-    background-color: #D1D1D1;
-    box-shadow: 2px 2px 5px grey;
-   }
    
-   .nwa-title{
+.nwa-title{
     margin-bottom: 1em;
     text-transform: capitalize;
-   }
+}
+.nwa-header-widget {
+    margin-top: 3em;
+    padding: 2em;
+}
+
+.nwa-header-widget img{
+    height: 30px;
+    width: 30px;
+}

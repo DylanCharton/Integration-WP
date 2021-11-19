@@ -85,13 +85,28 @@ get_header();
 
 
 <section id="section5">
-    <!-- ajout de ma nouvelle widget area -->
-    <?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
-        <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
-            <?php dynamic_sidebar( 'new-widget-area' ); ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            <!-- ajout de ma nouvelle widget area -->
+            <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
+                    <div id="header-widget-area-left" class="nwa-header-widget widget-area" role="complementary">
+                        <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
+                    </div>
+                <?php endif; ?>
+            <!-- fin nouvelle widget area -->
+            </div>
+            <div class="col-md-6">
+                <!-- ajout de ma nouvelle widget area -->
+                <?php if ( is_active_sidebar( 'new-widget-area-right' ) ) : ?>
+                    <div id="header-widget-area-right" class="nwa-header-widget widget-area" role="complementary">
+                        <?php dynamic_sidebar( 'new-widget-area-right' ); ?>
+                    </div>
+                <?php endif; ?>
+            <!-- fin nouvelle widget area -->
+            </div>
         </div>
-    <?php endif; ?>
-<!-- fin nouvelle widget area -->
+    </div>
 </section>
 
 <?php 
