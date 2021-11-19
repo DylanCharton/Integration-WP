@@ -28,12 +28,18 @@ msgstr "<span class=\"nav-short\">Publications</span> plus anciennes"
 msgid "Newer <span class=\"nav-short\">posts</span>"
 msgstr "<span class=\"nav-short\">Publications</span> plus récentes"
 
+<<<<<<< HEAD
 #: classes/class-twenty-twenty-one-customize-notice-control.php:40
 #: classes/class-twenty-twenty-one-dark-mode.php:178
+=======
+#: classes/class-twenty-twenty-one-dark-mode.php:189
+#: classes/class-twenty-twenty-one-customize-notice-control.php:42
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
 msgstr "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
 
 #. translators: %s: Twenty Twenty-One support article URL.
+<<<<<<< HEAD
 #: classes/class-twenty-twenty-one-dark-mode.php:177
 msgid "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href=\"%s\">Learn more about Dark Mode.</a>"
 msgstr "Le mode sombre est un réglage au niveau de l’appareil. Si un visiteur de votre site le demande, votre site s’affichera avec un arrière-plan sombre et un texte clair. <a href=\"%s\">En savoir plus sur le mode sombre.</a>"
@@ -67,6 +73,41 @@ msgid "To access the Dark Mode settings, select a light background color."
 msgstr "Pour accéder aux réglages du mode sombre, sélectionnez une couleur d’arrière-plan claire."
 
 #: classes/class-twenty-twenty-one-dark-mode.php:134
+=======
+#: classes/class-twenty-twenty-one-dark-mode.php:188
+msgid "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href=\"%s\">Learn more about Dark Mode.</a>"
+msgstr "Le mode sombre est un réglage au niveau de l’appareil. Si un visiteur de votre site le demande, votre site s’affichera avec un arrière-plan sombre et un texte clair. <a href=\"%s\">En savoir plus sur le mode sombre.</a>"
+
+#: classes/class-twenty-twenty-one-dark-mode.php:192
+msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page."
+msgstr "Le mode sombre peut également être activé et désactivé à l’aide d’un bouton que vous pouvez trouver dans le coin inférieur droit de la page."
+
+#: classes/class-twenty-twenty-one-dark-mode.php:408
+msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
+msgstr "Ce site utilise LocalStorage pour enregistrer le réglage lorsque la prise en charge du mode sombre est activée ou désactivée.<br> LocalStorage est nécessaire pour que le réglage fonctionne et n’est utilisé que lorsqu’une personne clique sur le bouton Mode sombre.<br>Aucune donnée n’est enregistrée dans la base de données ou transférée."
+
+#: classes/class-twenty-twenty-one-dark-mode.php:407
+msgid "Suggested text:"
+msgstr "Texte suggéré :"
+
+#: classes/class-twenty-twenty-one-dark-mode.php:406
+msgid "Twenty Twenty-One uses LocalStorage when Dark Mode support is enabled."
+msgstr "Twenty Twenty-One utilise LocalStorage lorsque la prise en charge du mode sombre est activée."
+
+#: classes/class-twenty-twenty-one-dark-mode.php:199
+msgid "Dark Mode support"
+msgstr "Prise en charge du mode sombre"
+
+#: classes/class-twenty-twenty-one-customize-notice-control.php:43
+msgid "Learn more about Dark Mode."
+msgstr "En savoir plus sur le mode sombre."
+
+#: classes/class-twenty-twenty-one-customize-notice-control.php:41
+msgid "To access the Dark Mode settings, select a light background color."
+msgstr "Pour accéder aux réglages du mode sombre, sélectionnez une couleur d’arrière-plan claire."
+
+#: classes/class-twenty-twenty-one-dark-mode.php:145
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Colors & Dark Mode"
 msgstr "Couleurs & Mode sombre"
 
@@ -75,17 +116,29 @@ msgctxt "Label for sticky posts"
 msgid "Featured post"
 msgstr "Publication mise en avant"
 
+<<<<<<< HEAD
 #: inc/template-functions.php:424
+=======
+#: inc/template-functions.php:399
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgctxt "Post password form"
 msgid "Submit"
 msgstr "Envoyer"
 
+<<<<<<< HEAD
 #: inc/template-functions.php:424
+=======
+#: inc/template-functions.php:399
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgctxt "Post password form"
 msgid "Password"
 msgstr "Mot de passe"
 
+<<<<<<< HEAD
 #: inc/template-functions.php:183
+=======
+#: inc/template-functions.php:174
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgctxt "Added to posts and pages that are missing titles"
 msgid "Untitled"
 msgstr "Sans titre"
@@ -110,25 +163,38 @@ msgctxt "Block pattern sample content"
 msgid "example@example.com"
 msgstr "exemple@example.com"
 
+<<<<<<< HEAD
 #: classes/class-twenty-twenty-one-customize.php:138
+=======
+#: classes/class-twenty-twenty-one-customize.php:143
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgctxt "Customizer control"
 msgid "Background color"
 msgstr "Couleur d’arrière-plan"
 
 #. translators: %s: WordPress Version.
+<<<<<<< HEAD
 #. translators: %s: WordPress Version.
 #. translators: %s: WordPress Version.
+=======
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 #: inc/back-compat.php:42 inc/back-compat.php:61 inc/back-compat.php:86
 msgid "This theme requires WordPress 5.3 or newer. You are running version %s. Please upgrade."
 msgstr "Ce thème nécessite WordPress 5.3 ou plus récent. Vous utilisez la version %s. Veuillez mettre à niveau."
 
 #. translators: %: Page number.
+<<<<<<< HEAD
 #. translators: %: Page number.
 #. translators: %: Page number.
 #. translators: %: Page number.
 #: image.php:48 template-parts/content/content-page.php:36
 #: template-parts/content/content-single.php:30
 #: template-parts/content/content.php:36
+=======
+#: template-parts/content/content.php:36
+#: template-parts/content/content-page.php:36
+#: template-parts/content/content-single.php:30 image.php:46
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Page %"
 msgstr "Page %"
 
@@ -183,15 +249,24 @@ msgstr[1] "%s commentaires"
 msgid "1 comment"
 msgstr "1 commentaire"
 
+<<<<<<< HEAD
 #: classes/class-twenty-twenty-one-dark-mode.php:334
 msgid "On"
 msgstr "On"
 
 #: classes/class-twenty-twenty-one-dark-mode.php:331
+=======
+#: classes/class-twenty-twenty-one-dark-mode.php:358
+msgid "On"
+msgstr "On"
+
+#: classes/class-twenty-twenty-one-dark-mode.php:355
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Off"
 msgstr "Off"
 
 #. translators: %s: On/Off
+<<<<<<< HEAD
 #: classes/class-twenty-twenty-one-dark-mode.php:321
 msgid "Dark Mode: %s"
 msgstr "Mode sombre : %s"
@@ -201,6 +276,17 @@ msgid "This content is password protected. Please enter a password to view."
 msgstr "Ce contenu est protégé par un mot de passe. Veuillez saisir le mot de passe pour le voir."
 
 #: inc/menu-functions.php:34
+=======
+#: classes/class-twenty-twenty-one-dark-mode.php:345
+msgid "Dark Mode: %s"
+msgstr "Mode sombre : %s"
+
+#: inc/template-functions.php:397
+msgid "This content is password protected. Please enter a password to view."
+msgstr "Ce contenu est protégé par un mot de passe. Veuillez saisir le mot de passe pour le voir."
+
+#: inc/menu-functions.php:35
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Open menu"
 msgstr "Ouvrir le menu"
 
@@ -221,7 +307,11 @@ msgstr "« Jonquilles » par Berthe Morisot"
 msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
 msgstr "« Rose Trémières » par Berthe Morisot"
 
+<<<<<<< HEAD
 #: inc/template-functions.php:424
+=======
+#: inc/template-functions.php:399
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgctxt "Post password form"
 msgid "Enter"
 msgstr "Saisir"
@@ -335,6 +425,7 @@ msgid "&#8220;Playing in the Sand&#8221; by Berthe Morisot"
 msgstr "« Jeu dans le sable » par Berthe Morisot"
 
 #. translators: %s: Parent post.
+<<<<<<< HEAD
 #: image.php:61
 msgid "Published in %s"
 msgstr "Publié dans %s"
@@ -344,6 +435,17 @@ msgid "Summary"
 msgstr "Résumé"
 
 #: classes/class-twenty-twenty-one-customize.php:85
+=======
+#: image.php:59
+msgid "Published in %s"
+msgstr "Publié dans %s"
+
+#: classes/class-twenty-twenty-one-customize.php:113
+msgid "Summary"
+msgstr "Résumé"
+
+#: classes/class-twenty-twenty-one-customize.php:90
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Excerpt Settings"
 msgstr "Réglages d’extrait"
 
@@ -351,7 +453,11 @@ msgstr "Réglages d’extrait"
 msgid "Thick"
 msgstr "Épais"
 
+<<<<<<< HEAD
 #: classes/class-twenty-twenty-one-customize.php:106
+=======
+#: classes/class-twenty-twenty-one-customize.php:111
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "On Archive Pages, posts show:"
 msgstr "Sur les pages d’archive, les publications affichent :"
 
@@ -361,8 +467,12 @@ msgid "View all of %s's posts."
 msgstr "Voir tous les articles de %s."
 
 #. translators: %s: Author name.
+<<<<<<< HEAD
 #. translators: %s: Author name.
 #: inc/template-tags.php:49 template-parts/post/author-bio.php:19
+=======
+#: template-parts/post/author-bio.php:19 inc/template-tags.php:49
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "By %s"
 msgstr "Par %s"
 
@@ -409,44 +519,66 @@ msgstr[0] "Nous avons trouvé %d résultat pour votre recherche."
 msgstr[1] "Nous avons trouvé %d résultats pour votre recherche."
 
 #. translators: %s: Search term.
+<<<<<<< HEAD
 #. translators: %s: Search term.
 #: search.php:21 template-parts/content/content-none.php:22
+=======
+#: template-parts/content/content-none.php:22 search.php:21
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Results for \"%s\""
 msgstr "Résultats pour « %s »"
 
 #. translators: %s: List of tags.
+<<<<<<< HEAD
 #. translators: %s: List of tags.
+=======
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 #: inc/template-tags.php:118 inc/template-tags.php:162
 msgid "Tagged %s"
 msgstr "Étiqueté %s"
 
 #. translators: %s: List of categories.
+<<<<<<< HEAD
 #. translators: %s: List of categories.
+=======
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 #: inc/template-tags.php:108 inc/template-tags.php:152
 msgid "Categorized as %s"
 msgstr "Catégorisé comme %s"
 
 #. translators: Used between list items, there is a space after the comma.
+<<<<<<< HEAD
 #. translators: Used between list items, there is a space after the comma.
 #. translators: Used between list items, there is a space after the comma.
 #. translators: Used between list items, there is a space after the comma.
+=======
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 #: inc/template-tags.php:104 inc/template-tags.php:114
 #: inc/template-tags.php:148 inc/template-tags.php:158
 msgid ", "
 msgstr ", "
 
 #. translators: %s: Name of current post. Only visible to screen readers.
+<<<<<<< HEAD
 #. translators: %s: Name of current post. Only visible to screen readers.
 #. translators: %s: Name of current post. Only visible to screen readers.
 #. translators: %s: Name of current post. Only visible to screen readers.
 #. translators: %s: Name of current post. Only visible to screen readers.
 #: image.php:70 image.php:95 inc/template-tags.php:92 inc/template-tags.php:135
 #: template-parts/content/content-page.php:48
+=======
+#: template-parts/content/content-page.php:48 image.php:68 image.php:93
+#: inc/template-tags.php:92 inc/template-tags.php:135
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Edit %s"
 msgstr "Modifier %s"
 
 #. translators: %s: Name of current post.
+<<<<<<< HEAD
 #: inc/template-functions.php:138
+=======
+#: inc/template-functions.php:132
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Continue reading %s"
 msgstr "Poursuivre la lecture de %s"
 
@@ -558,7 +690,11 @@ msgstr "Un nouveau thème portfolio par défaut pour WordPress"
 msgid "Large text"
 msgstr "Grand texte"
 
+<<<<<<< HEAD
 #: image.php:83
+=======
+#: image.php:81
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Taille originale"
@@ -568,10 +704,17 @@ msgstr "Taille originale"
 msgid "Published %s"
 msgstr "Publié le %s"
 
+<<<<<<< HEAD
 #: comments.php:62 image.php:45 inc/template-tags.php:228
 #: template-parts/content/content-page.php:33
 #: template-parts/content/content-single.php:27
 #: template-parts/content/content.php:33
+=======
+#: template-parts/content/content.php:33
+#: template-parts/content/content-page.php:33
+#: template-parts/content/content-single.php:27 comments.php:62 image.php:43
+#: inc/template-tags.php:228
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Page"
 msgstr "Page"
 
@@ -583,8 +726,13 @@ msgstr "Fermer"
 msgid "Menu"
 msgstr "Menu"
 
+<<<<<<< HEAD
 #: functions.php:76 inc/starter-content.php:154
 #: template-parts/header/site-nav.php:13
+=======
+#: template-parts/header/site-nav.php:13 functions.php:76
+#: inc/starter-content.php:154
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Primary menu"
 msgstr "Menu principal"
 
@@ -705,7 +853,11 @@ msgstr "Très petit"
 msgid "Proudly powered by %s."
 msgstr "Fièrement propulsé par %s"
 
+<<<<<<< HEAD
 #: footer.php:24 functions.php:77 inc/starter-content.php:165
+=======
+#: functions.php:77 inc/starter-content.php:165 footer.php:24
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Secondary menu"
 msgstr "Menu secondaire"
 
@@ -721,11 +873,19 @@ msgstr "Commentaires plus récents"
 msgid "Older comments"
 msgstr "Commentaires plus anciens"
 
+<<<<<<< HEAD
 #: classes/class-twenty-twenty-one-customize.php:109
 msgid "Full text"
 msgstr "Texte complet"
 
 #: classes/class-twenty-twenty-one-customize.php:75
+=======
+#: classes/class-twenty-twenty-one-customize.php:114
+msgid "Full text"
+msgstr "Texte complet"
+
+#: classes/class-twenty-twenty-one-customize.php:80
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Display Site Title & Tagline"
 msgstr "Afficher le titre et la description du site"
 
@@ -733,7 +893,11 @@ msgstr "Afficher le titre et la description du site"
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Apparemment, rien n’a été trouvé à cette adresse. Essayez avec une recherche ?"
 
+<<<<<<< HEAD
 #: 404.php:16 template-parts/content/content-none.php:30
+=======
+#: template-parts/content/content-none.php:30 404.php:16
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 msgid "Nothing here"
 msgstr "Rien ici"
 
@@ -748,4 +912,8 @@ msgstr "L’équipe WordPress"
 
 #. Theme URI of the theme
 msgid "https://wordpress.org/themes/twentytwentyone/"
+<<<<<<< HEAD
 msgstr "https://wordpress.org/themes/twentytwentyone/"
+=======
+msgstr "https://wordpress.org/themes/twentytwentyone/"
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c

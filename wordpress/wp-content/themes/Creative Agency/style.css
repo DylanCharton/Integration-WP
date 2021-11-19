@@ -7,6 +7,7 @@ Description: Thème intégré par Tommy, Alaeddin et Dylan
 Version: 1.0
 */
 
+<<<<<<< HEAD
 @font-face {
     font-family: 'robotoblack';
     src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
@@ -195,4 +196,50 @@ a:hover{
 
 #footer{
     background-color: #222222;
+=======
+/* SECTION 1 */
+
+#title-section1{
+    font-size: 10rem;
+}
+#hero-section{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CSS TOMMY */
+
+#nav-tom {
+
+    background-repeat: no-repeat;
+    
+}
+
+#menu-navigation a{
+
+    color: white;
+}
+
+.site-img {
+
+    margin-left: 15rem;
+ 
+}
+
+.nav-tom {
+    padding-top: 1rem;
+    color: #ffffff61;
+    border-bottom: solid 1px;
+}
+
+.nav-item {
+
+    margin-right: 1.4rem;
+
+}
+
+.container-tom {
+
+    
+>>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 }
