@@ -49,44 +49,33 @@ get_header();
     </div>
 </section>
 <!--------------------------------------  PROJECTS SECTION  ------------------------------------------->
-<section id="section3">
+
 
     <?php $loop = new WP_Query( array( 'post_type' => 'projets', 'posts_per_page' => '2' ) ); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     <?php 
        echo '
-       <div class="d-flex" id="projects-wrapper">
-            <div class="img-projects col-6">
-                <a href="'.get_permalink().'"><img src="'.get_field('img_project')[0]['images_du_projet'].'"/></a>
-            </div>
-            <div class="text-projects col-6 d-flex flex-column justify-content-center align-items-center">
-                <div class="mb-5">
-                    <h3>'.get_field('title_project').'</h3>
+        <section id="section3">
+            <div class="d-flex" id="projects-wrapper">
+                <div class="img-projects col-6">
+                    <a href="'.get_permalink().'"><img src="'.get_field('img_project')[0]['images_du_projet'].'"/></a>
                 </div>
-                <div class="w-50">
-                    <p>'.get_field('description_project').'</p>
+                <div class="text-projects col-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="mb-5">
+                        <h3>'.get_field('title_project').'</h3>
+                    </div>
+                    <div class="w-50">
+                        <p>'.get_field('description_project').'</p>
+                    </div>
+
                 </div>
-
             </div>
-        </div>
-       '
+        </section>
+       ';
 
-        
-       
+     endwhile; wp_reset_query(); ?>
 
-        
 
-    
-       ?>
-    <?php 
-       
-       
-       
-       
-       ?>
-    <?php endwhile; wp_reset_query(); ?>
-
-</section>
 
 
 <?php 

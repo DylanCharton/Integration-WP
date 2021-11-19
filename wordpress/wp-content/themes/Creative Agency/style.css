@@ -102,25 +102,26 @@ Version: 1.0
 }
 
 #section3{
-    height : 100vh;
+    height : fit-content;
 }
 
 .img-projects img{
     /* height: 3rem; */
     width: 100%;
 }
-
-#section3:nth-child(odd) #projects-wrapper:first-child .img-projects{
-    order: 2;
+#section3:nth-child(even) .img-projects {
+    order : 2;
+    
 }
-#section3:nth-child(odd) #projects-wrapper:first-child {
-    order: 1;
+#section3:nth-child(even) .text-projects {
     background-color: #222222;
-    color : #fff
+    color: #fff;
 }
-#projects-wrapper:last-of-type{
+#section3:nth-child(odd) .text-projects {
     background-color: #f3f3f3;
+    
 }
+
 
 /* CSS NAV */
 #nav-tom {
