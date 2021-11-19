@@ -7,7 +7,6 @@ Description: Thème intégré par Tommy, Alaeddin et Dylan
 Version: 1.0
 */
 
-<<<<<<< HEAD
 @font-face {
     font-family: 'robotoblack';
     src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
@@ -196,12 +195,12 @@ a:hover{
 
 #footer{
     background-color: #222222;
-=======
 /* SECTION 1 */
 
 #title-section1{
     font-size: 10rem;
 }
+
 #hero-section{
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,5 +240,4 @@ a:hover{
 .container-tom {
 
     
->>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 }
