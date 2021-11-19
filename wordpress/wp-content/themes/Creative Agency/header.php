@@ -2,14 +2,6 @@
 <html lang="fr">
 
 <head>
-<<<<<<< HEAD
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= the_title() ?></title>
-=======
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -18,12 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= the_title() ?></title>
->>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 </head>
 
 <body>
 
-<<<<<<< HEAD
 <?php
 if ( has_nav_menu( 'header-menu' ) ) : ?>
 <?php
@@ -34,7 +24,6 @@ wp_nav_menu ( array (
 ) ); ?>
 <?php endif;
 ?>
-=======
   <!-- NAV BAR -->
 
   <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"> <img class="site-img" src="<?= get_site_icon_url()?>" >
@@ -104,7 +93,6 @@ wp_nav_menu ( array (
 
 <php endif;?> -->
 
->>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 </body>
 
 </html>

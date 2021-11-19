@@ -3,7 +3,6 @@
 get_header();
 ?>
 
-<<<<<<< HEAD
 <section id="section2">
     <div class="container">
         <div class="row">
@@ -30,7 +29,6 @@ get_header();
         ?>
         </div>
     </div>
-=======
 <section class="container-fluid d-flex align-items-center justify-content-center flex-column" id="hero-section"
     style="background-image:url(<?= the_field('bg_hero');?> ); height:100vh;">
     
@@ -50,14 +48,9 @@ get_header();
 
 
 
->>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 </section>
 
 
-<<<<<<< HEAD
-=======
-get_footer();
->>>>>>> 5be8c39f8523e30c4fc4611c12707ef5ebe6cd9c
 
 <section id="section4">         
     <?php 
