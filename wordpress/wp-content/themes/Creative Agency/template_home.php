@@ -64,12 +64,15 @@ get_header();
             while($the_query->have_posts()){
                 $the_query->the_post();
                 // echo wp_count_posts();
-                echo '<div class="article col-md-3">';
+                $link = get_the_permalink();
+                echo '<a class="linkArticle col-md-3" href='.$link.' target="_blank">';
+                echo '<div class="article">';
                 echo '<img src="'.get_field('img_article').'"/>';
                 echo '<div class="titleArticle">'.get_the_title().'</div>';
                 echo get_field('description_article');
                 // echo get_the_ID();
                 echo '</div>';
+                echo '</a>';
             }
             wp_reset_postdata(); 
         }else{

@@ -143,3 +143,19 @@ Version: 1.0
         font-size: 17px;
     }
 }
+
+
+a{
+    color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: black;
+}
