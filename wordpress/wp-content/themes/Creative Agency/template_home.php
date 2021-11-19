@@ -6,8 +6,8 @@ get_header();
 <section id="section2">
     <div class="container">
         <div class="row">
-            <div id="letterBlock1">
-                <div id="titleBlock1">
+            <div id="letterBlock2">
+                <div id="titleBlock2">
                     <?= get_field('title_section2');?>
                 </div>
                 <p><?= get_field('letter_section2')?></p>
@@ -41,13 +41,18 @@ get_header();
             'posts_per_page' => 4,
         )); 
     ?>
-<div class="container"> 
+
+
+<div class="container">
     <div class="row">
-        <div id="letterBlock2">
-            <div id="titleBlock2">
+        <div id="letterBlock4">
+            <div id="titleBlock4">
                 <?= get_field('title_section2');?>
             </div>
-                <p><?= get_field('letter_section2')?></p>
+            <p><?= get_field('letter_section2')?></p>
+        </div>
+        <div id="catchsentence">
+            <p><?= get_field('catchphrase')?></p>
         </div>
     </div>
 </div>
@@ -58,10 +63,12 @@ get_header();
         if($the_query->have_posts()){
             while($the_query->have_posts()){
                 $the_query->the_post();
+                // echo wp_count_posts();
                 echo '<div class="article col-md-3">';
                 echo '<img src="'.get_field('img_article').'"/>';
                 echo '<div class="titleArticle">'.get_the_title().'</div>';
-                the_excerpt();
+                echo get_field('description_article');
+                // echo get_the_ID();
                 echo '</div>';
             }
             wp_reset_postdata(); 
@@ -70,11 +77,8 @@ get_header();
         }
         ?>
     </div>
-</div>
-
-    
+</div>   
 </section>
-
 
 <?php 
 get_footer();

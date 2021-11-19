@@ -16,14 +16,14 @@ Version: 1.0
 
 }
 
-#letterBlock1 {
+#letterBlock2 {
     position: relative;
     height: fit-content;
     display: flex;
     justify-content: center;
 }
 
-#letterBlock1 p {
+#letterBlock2 p {
     color: white;
     opacity: 0.3;
     font-size: 150px;
@@ -32,7 +32,7 @@ Version: 1.0
     font-family: robotoblack;
 }
 
-#titleBlock1 {
+#titleBlock2 {
     color: white;
     width: fit-content;
     position: absolute;
@@ -92,7 +92,7 @@ Version: 1.0
     padding: 4rem 0;
 }
 
-#letterBlock2 p {
+#letterBlock4 p {
     color: #d21242;
     font-size: 150px;
     font-weight: 800;
@@ -100,7 +100,7 @@ Version: 1.0
     font-family: robotoblack;
 }
 
-#titleBlock2 {
+#titleBlock4 {
     color: black;
     width: fit-content;
     position: absolute;
@@ -108,6 +108,20 @@ Version: 1.0
     transform: translateY(275%);
 }
 
+#letterBlock4 {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#catchsentence{
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
 @media screen and (max-width:750px){
     #titleBlock1 {
         color: white;
