@@ -121,3 +121,14 @@ Version: 1.0
 #projects-wrapper:last-of-type{
     background-color: #f3f3f3;
 }
+
+/* CSS NAV */
+#nav-tom {
+
+background-repeat: no-repeat;
+
+}
+
+#menu-navigation a{
+    color: white;
+}
