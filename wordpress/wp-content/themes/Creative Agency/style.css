@@ -7,7 +7,197 @@ Description: Thème intégré par Tommy, Alaeddin et Dylan
 Version: 1.0
 */
 
+@font-face {
+    font-family: 'robotoblack';
+    src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#letterBlock2 {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#letterBlock2 p {
+    color: white;
+    opacity: 0.3;
+    font-size: 150px;
+    font-weight: 800;
+    width: fit-content;
+    font-family: robotoblack;
+}
+
+#titleBlock2 {
+    color: white;
+    width: fit-content;
+    position: absolute;
+    font-size: 25px;
+    transform: translateY(275%);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.features img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#titleBloc {
+    margin: 3rem 0;
+}
+
+#descriptionBloc {
+    margin-bottom: 50px;
+}
+
+#section2 {
+    background-color: #d21242;
+    padding: 50px;
+}
+
+#containerBlock{
+    text-align: justify;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+}
+
+.article img{
+    height: 280px;
+    width: 280px;
+    object-fit: fill;
+    margin-bottom: 2rem ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article p{
+    text-align: center;
+}
+
+.titleArticle{
+    color: #d21242;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.titleArticle:hover{
+    text-decoration-line: underline;
+}
+.descriptionArticle{
+    margin-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#section4{
+    padding: 4rem 0;
+}
+
+#letterBlock4 p {
+    color: #d21242;
+    font-size: 150px;
+    font-weight: 800;
+    width: fit-content;
+    font-family: robotoblack;
+}
+
+#titleBlock4 {
+    color: black;
+    width: fit-content;
+    position: absolute;
+    font-size: 25px;
+    transform: translateY(275%);
+}
+
+#letterBlock4 {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#catchsentence{
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#rowAnnonce{
+    justify-content: center;
+}
+
+#section5{
+    background-color: #d21242;
+}
+
+@media screen and (max-width:750px){
+    #titleBlock1 {
+        color: white;
+        width: fit-content;
+        position: absolute;
+        transform: translateY(430%);
+        font-size: 17px;
+    }
+}
+
+
+a{
+    color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: black;
+}
+
+   
+.nwa-title{
+    margin-bottom: 1em;
+    text-transform: capitalize;
+}
+.nwa-header-widget {
+    margin-top: 3em;
+    padding: 2em;
+}
+
+.nwa-header-widget img{
+    height: 30px;
+    width: 30px;
+}
+
+.nwa-widget{
+    width: fit-content;
+}
+
+#footer{
+    background-color: #222222;
+}
 /* SECTION 1 */
+
 
 #title-section1{
     font-size: 10rem;

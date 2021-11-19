@@ -14,6 +14,16 @@
 
 <body>
 
+<?php
+if ( has_nav_menu( 'header-menu' ) ) : ?>
+<?php
+wp_nav_menu ( array (
+'theme_location' => 'header-menu' ,
+'container'      => 'nav',
+'menu_class'     => 'right no-bullets no-margin',
+) ); ?>
+<?php endif;
+?>
   <!-- NAV BAR -->
 
   <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"> <img class="site-img" src="<?= get_site_icon_url()?>" >
