@@ -2,41 +2,40 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-=======
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/style.css">
->>>>>>> 0a9084ed4e80e69b70ff5d397788b9fc21c33c01
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= the_title() ?></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?= the_title() ?></title>
 </head>
 
 <body>
 
-    <!-- NAV BAR -->
+  <!-- NAV BAR -->
 
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top"> <img class="site-img" src="<?= get_site_icon_url()?>" style="right:50px">
+    <div class="container-fluid d-flex ">  
 
-<?php wp_nav_menu([
+      <div><a class="navbar-brand" href="#" style="margin-right: 30rem;"></a></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:white">
 
-    'theme_location' => 'header',
-    'container' => false,
-    'menu_class' => 'navbar-nav me-auto'
-]) 
-?>
+        <?php wp_nav_menu([
 
-<!--        
+      'theme_location' => 'header',
+      'container' => false,
+      'menu_class' => 'navbar-nav me-auto'
+
+    ]) 
+    ?>
+
+        <!--        
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -60,29 +59,29 @@
         </li>
       </ul>
 -->
-      <!-- <form class="d-flex">
+        <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> -->
+      </div>
     </div>
-  </div>
-</nav> 
+  </nav>
 
-<!-- Fin de nav bar  -->
-
+  <!-- Fin de nav bar  -->
 
 
-<?php
+  <!--           AUTRE MENU
+<php
     if ( has_nav_menu( 'header-menu' ) ) : ?>
     
-<?php wp_nav_menu ( array (
+<php wp_nav_menu ( array (
     'theme_location' => 'header-menu' ,
     'container'      => 'nav',
     'menu_class'     => 'navbar-nav me-auto',
 ) ); 
 ?>
 
-<?php endif;?>
+<php endif;?> -->
 
 </body>
 

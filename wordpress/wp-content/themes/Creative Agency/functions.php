@@ -28,11 +28,10 @@ function montheme_menu_link_class(array $attrs): array
 }
 
 
-
+add_action('init', 'mesMenusWordpress');
 add_filter('nav_menu_css_class', 'montheme_menu_class');
 add_filter('nav_menu_link_attributes', 'montheme_menu_link_class');
 
-add_action('init', 'mesMenusWordpress');
 
 
 /*

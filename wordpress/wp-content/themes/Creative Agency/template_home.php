@@ -1,18 +1,12 @@
 <?php 
 /* Template name: Homepage */
-
-<<<<<<< HEAD
-<?php
-// the_title();
-// the_content();
-=======
->>>>>>> 0a9084ed4e80e69b70ff5d397788b9fc21c33c01
+get_header();
 ?>
 
 <section class="container-fluid d-flex align-items-center justify-content-center flex-column" id="hero-section"
     style="background-image:url(<?= the_field('bg_hero');?> ); height:100vh;">
     
-        <nav class="navbar nav d-flex fixed-top"><?php get_header(); ?></nav>
+        <nav class="navbar nav d-flex fixed-top"></nav>
     
     <div class="d-flex flex-column align-items-center justify-content-center">
         <h1 class="text-white" id="title-section1"><?= the_field('title_section1');?></h1>
