@@ -16,10 +16,10 @@
 
   <!-- NAV BAR -->
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top"> <img class="site-img" src="<?= get_site_icon_url()?>" style="right:50px">
-    <div class="container-fluid d-flex ">  
+  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"> <img class="site-img" src="<?= get_site_icon_url()?>" >
+    <div class="container-fluid d-flex contain-tom">  
 
-      <div><a class="navbar-brand" href="#" style="margin-right: 30rem;"></a></div>
+    
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

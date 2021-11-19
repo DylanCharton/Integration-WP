@@ -18,16 +18,37 @@ Version: 1.0
 }
 
 /* CSS TOMMY */
+
 #nav-tom {
 
-
-background-repeat: no-repeat;
-
+    background-repeat: no-repeat;
     
-
 }
 
 #menu-navigation a{
 
     color: white;
+}
+
+.site-img {
+
+    margin-left: 15rem;
+ 
+}
+
+.nav-tom {
+    padding-top: 1rem;
+    color: #ffffff61;
+    border-bottom: solid 1px;
+}
+
+.nav-item {
+
+    margin-right: 1.4rem;
+
+}
+
+.container-tom {
+
+    
 }
