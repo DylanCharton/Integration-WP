@@ -70,11 +70,18 @@ Version: 1.0
     text-align: justify;
 }
 
+.article{
+    display: flex;
+    flex-direction: column;
+}
+
 .article img{
     height: 280px;
     width: 280px;
     object-fit: fill;
     margin-bottom: 2rem ;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .article p{
@@ -122,6 +129,11 @@ Version: 1.0
     justify-content: center;
     margin-bottom: 2rem;
 }
+
+#rowAnnonce{
+    justify-content: center;
+}
+
 @media screen and (max-width:750px){
     #titleBlock1 {
         color: white;

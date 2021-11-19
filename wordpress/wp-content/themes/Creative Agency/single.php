@@ -33,7 +33,7 @@
     ?>
 
 <div class="container">
-    <div  class="row">
+    <div id="rowAnnonce" class="row">
         <?php
         if($the_query->have_posts()){
             while($the_query->have_posts()){
@@ -42,7 +42,7 @@
                 echo '<img src="'.get_field('img_article').'"/>';
                 echo '<div class="titleArticle">'.get_the_title().'</div>';
                 the_excerpt();
-                echo get_the_ID();
+                get_the_ID();
                 echo '</div>';
             }
             wp_reset_postdata(); 
