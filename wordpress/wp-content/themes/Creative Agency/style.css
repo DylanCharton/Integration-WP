@@ -234,12 +234,10 @@ a:hover{
 }
 
 .nav-item {
-
     margin-right: 1.4rem;
-
 }
 
 .container-tom {
-
-    
+    padding-top: 0.5rem;
+    padding-left: 21rem;
 }
