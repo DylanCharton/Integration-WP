@@ -26,14 +26,14 @@ Version: 1.0
 
 /* SECTION 2 */
 
-#letterBlock1 {
+#letterBlock2 {
     position: relative;
     height: fit-content;
     display: flex;
     justify-content: center;
 }
 
-#letterBlock1 p {
+#letterBlock2 p {
     color: white;
     opacity: 0.3;
     font-size: 150px;
@@ -42,7 +42,7 @@ Version: 1.0
     font-family: robotoblack;
 }
 
-#titleBlock1 {
+#titleBlock2 {
     color: white;
     width: fit-content;
     position: absolute;
@@ -64,7 +64,7 @@ Version: 1.0
 }
 
 #titleBloc {
-    margin: 50px 0;
+    margin: 3rem 0;
 }
 
 #descriptionBloc {
@@ -81,6 +81,86 @@ Version: 1.0
 }
 
 @media screen and (max-width:768px){
+.article{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.article img{
+    height: 280px;
+    width: 280px;
+    object-fit: fill;
+    margin-bottom: 2rem ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article p{
+    text-align: center;
+}
+
+.titleArticle{
+    color: #d21242;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.titleArticle:hover{
+    text-decoration-line: underline;
+}
+.descriptionArticle{
+    margin-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#section4{
+    padding: 4rem 0;
+}
+
+#letterBlock4 p {
+    color: #d21242;
+    font-size: 150px;
+    font-weight: 800;
+    width: fit-content;
+    font-family: robotoblack;
+}
+
+#titleBlock4 {
+    color: black;
+    width: fit-content;
+    position: absolute;
+    font-size: 25px;
+    transform: translateY(275%);
+}
+
+#letterBlock4 {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#catchsentence{
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#rowAnnonce{
+    justify-content: center;
+}
+
+#section5{
+    background-color: #d21242;
+}
+
+@media screen and (max-width:750px){
     #titleBlock1 {
         color: white;
         width: fit-content;
@@ -126,36 +206,81 @@ Version: 1.0
 
 
 /* CSS NAV */
+
+a{
+    color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none; 
+}
+  
+.nwa-title{
+    margin-bottom: 1em;
+    text-transform: capitalize;
+}
+.nwa-header-widget {
+    margin-top: 3em;
+    padding: 2em;
+}
+
+.nwa-header-widget img{
+    height: 30px;
+    width: 30px;
+}
+
+.nwa-widget{
+    width: fit-content;
+}
+
+#footer{
+    background-color: #222222;
+}
+
+/* SECTION 1 */
+
+
+#title-section1{
+    font-size: 10rem;
+}
+
+#hero-section{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CSS TOMMY */
+
 #nav-tom {
 
-background-repeat: no-repeat;
-
+    background-repeat: no-repeat;
+    
 }
 
 #menu-navigation a{
     color: white;
 }
 
-/* CONTACT */
-
-#contact-form-section{
-    background-color: #d21242;
-    color : #fff;
+.site-img {
+    margin-left: 15rem; 
 }
 
-#contact-form-section form {
-    text-align:center;
+.nav-tom {
+    padding-top: 2rem;
+    color: #ffffff61;
+    border-bottom: solid 1px;  
 }
 
-.btn-secondary:hover{
-    background-color: #fff;
-    color: #d21242;
-    border: #fff 1px solid;
-    transition: 0.3s;
+.nav-item {
+    margin-right: 1.5rem;
+    size: 2rem;
 }
-.btn-secondary{
-    background-color: #d21242;
-    color: #fff;
-    border: #fff 1px solid;
-    transition: 0.3s;
+
+.container-tom {
+    padding-top: 0.5rem;
+    padding-left: 21rem;
 }
