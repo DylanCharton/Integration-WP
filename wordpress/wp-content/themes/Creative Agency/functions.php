@@ -115,8 +115,7 @@ add_theme_support( 'customize-selective-refresh-widgets' );
  * @return void
  */
 
-// Area Widjets section 5
-
+// Area Widjets section 5 left
 function section5_left_widgets_init() {
  
 	register_sidebar( array(
@@ -131,6 +130,8 @@ function section5_left_widgets_init() {
    }
    
 add_action( 'widgets_init', 'section5_left_widgets_init' );
+
+// Area Widjets section 5 right
 
 function section5_right_widgets_init() {
  
@@ -147,6 +148,7 @@ function section5_right_widgets_init() {
    
 add_action( 'widgets_init', 'section5_right_widgets_init' );
 
+// Area Widjets section 5 footer
 function footer_widgets_init() {
  
 	register_sidebar( array(
@@ -208,12 +210,12 @@ class wpb_widget extends WP_Widget {
 	// Widget admin form
 	?>
 <p>
-	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Copyright :' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
 		name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 </p>
 <p>
-	<label for="<?php echo $this->get_field_id( 'title1' ); ?>"><?php _e( 'Title:' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'title1' ); ?>"><?php _e( 'Designer :' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'title1' ); ?>"
 		name="<?php echo $this->get_field_name( 'title1' ); ?>" type="text" value="<?php echo esc_attr( $title1 ); ?>" />
 </p>

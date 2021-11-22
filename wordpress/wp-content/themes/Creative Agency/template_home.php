@@ -76,7 +76,7 @@ get_header();
                 $the_query->the_post();
                 // echo wp_count_posts();
                 $link = get_the_permalink();
-                echo '<div class="article col-md-3">';
+                echo '<div class="article col-12 col-lg-3">';
                 echo '<a  href='.$link.' target="_blank">';
                 echo '<img src="'.get_field('img_article').'"/>';
                 echo '</a>';
@@ -84,7 +84,6 @@ get_header();
                 echo '<div class="titleArticle">'.get_the_title().'</div>';
                 echo '</a>';
                 echo '<div class="descriptionArticle">'.get_field('description_article').'</div>';
-                // echo get_the_ID();
                 echo '</div>';
             }
             wp_reset_postdata(); 
