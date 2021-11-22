@@ -4,13 +4,35 @@ function mesMenusWordpress()
 {
     register_nav_menus(
         array(
-            'header-menu' => __('Zone menu header'), 
-            'footer-menu' => __('Zone menu footer'), 
+            'header-menu' => __('Zone menu header'),
+            'footer-menu' => __('Zone menu footer'),
+			'header' => __('En tête de menu'),
         )
         );
 }
 
+function montheme_menu_class(array $classes): array
+{
+
+	$classes[] = 'nav-item';
+	return $classes;
+
+}
+
+function montheme_menu_link_class(array $attrs): array
+{
+
+	$attrs['class'] = 'nav-link';
+	return $attrs;
+
+}
+
+
 add_action('init', 'mesMenusWordpress');
+add_filter('nav_menu_css_class', 'montheme_menu_class');
+add_filter('nav_menu_link_attributes', 'montheme_menu_link_class');
+
+
 
 /*
 * On utilise une fonction pour créer notre custom post type 'Projets'
