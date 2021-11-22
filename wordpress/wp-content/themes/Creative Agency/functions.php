@@ -188,7 +188,7 @@ class wpb_widget extends WP_Widget {
 	// before and after widget arguments are defined by themes
 	echo $args['before_widget'];
 	if ( ! empty( $title ) )
-	echo $args['before_title'] .  '<p>@ 2021 <a href="http://localhost/mentions-legales">'.$title.'</a> - All Right Reserved</p>' . $args['after_title'];
+	echo $args['before_title'] .  '<p>©20'.get_the_time('y').' <a href="http://localhost/mentions-legales">'.$title.'</a> - All Right Reserved</p>' . $args['after_title'];
 	echo $args['before_title'] .  '<p>Designed By '.$title1.'</p>' . $args['after_title'];
 	  
 	// This is where you run the code and display the output
