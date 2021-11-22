@@ -6,7 +6,6 @@ Author URI: https://www.accesscodeschool.fr/
 Description: Thème intégré par Tommy, Alaeddin et Dylan
 Version: 1.0
 */
-
 @font-face {
     font-family: 'robotoblack';
     src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
@@ -15,6 +14,17 @@ Version: 1.0
     font-style: normal;
 
 }
+/* SECTION 1 */
+
+#title-section1{
+    font-size: 10rem;
+}
+#hero-section{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* SECTION 2 */
 
 #letterBlock2 {
     position: relative;
@@ -70,9 +80,11 @@ Version: 1.0
     text-align: justify;
 }
 
+@media screen and (max-width:768px){
 .article{
     display: flex;
     flex-direction: column;
+}
 }
 
 .article img{
@@ -107,13 +119,9 @@ Version: 1.0
     text-align: justify;
 }
 
-#section4{
-    padding: 4rem 0;
-}
-
 #letterBlock4 p {
     color: #d21242;
-    font-size: 150px;
+    font-size: 15rem;
     font-weight: 800;
     width: fit-content;
     font-family: robotoblack;
@@ -123,8 +131,8 @@ Version: 1.0
     color: black;
     width: fit-content;
     position: absolute;
-    font-size: 25px;
-    transform: translateY(275%);
+    font-size: 2rem;
+    transform: translateY(315%);
 }
 
 #letterBlock4 {
@@ -166,6 +174,42 @@ Version: 1.0
     }
 }
 
+/* PROJECT PAGES */
+
+.carousel-item{
+    height : 30rem;
+    width : 50rem;
+}
+
+.carousel-item img{
+    object-fit :contain;
+}
+
+#section3{
+    height : fit-content;
+}
+
+.img-projects img{
+    height: 30rem; 
+    width: 100%;
+    object-fit: cover;
+    
+}
+#section3:nth-child(even) .img-projects {
+    order : 2;
+    
+}
+#section3:nth-child(even) .text-projects {
+    background-color: #222222;
+    color: #fff;
+}
+#section3:nth-child(odd) .text-projects {
+    background-color: #f3f3f3;
+    
+}
+
+
+/* CSS NAV */
 
 a{
     color: black;
@@ -177,12 +221,7 @@ a{
     font-style: normal;
     text-decoration: none; 
 }
-
-a:hover{
-    color: black;
-}
-
-   
+  
 .nwa-title{
     margin-bottom: 1em;
     text-transform: capitalize;
@@ -206,6 +245,16 @@ a:hover{
     position: relative;
     bottom: 0;
 }
+
+.colored-nav{
+    background-color: #222222;
+    transition: 0.3s;
+}
+.transparent-nav{
+    background-color: #22222200;
+    transition: 0.3s;
+}
+
 /* SECTION 1 */
 
 
@@ -222,24 +271,21 @@ a:hover{
 /* CSS TOMMY */
 
 #nav-tom {
-
     background-repeat: no-repeat;
-    
 }
 
 #menu-navigation a{
-
     color: white;
 }
 
 .site-img {
-    margin-left: 15rem;
+    margin-left: 15rem; 
 }
 
 .nav-tom {
     padding-top: 2rem;
     color: #ffffff61;
-    border-bottom: solid 1px;
+    border-bottom: solid 1px;  
 }
 
 .nav-item {
@@ -261,6 +307,32 @@ a:hover{
     justify-content: space-between;
 }
 
+/* CONTACT */
+
+#contact-form-section{
+    background-color: #d21242;
+    color : #fff;
+}
+
+#contact-form-section form {
+    text-align:center;
+}
+
+.btn-secondary:hover{
+    background-color: #fff;
+    color: #d21242;
+    border: #fff 1px solid;
+    transition: 0.3s;
+}
+.btn-secondary{
+    background-color: #d21242;
+    color: #fff;
+    border: #fff 1px solid;
+    transition: 0.3s;
+
+}
+
+/* Footer */
 .footerWidgetBlock a{
     color: white;
 }

@@ -2,21 +2,24 @@
 /* Template name: Homepage */
 get_header();
 ?>
+<!--------------------------------------  HERO SECTION  ------------------------------------------->
 
-<section class="container-fluid d-flex align-items-center justify-content-center flex-column" id="hero-section" style="background-image:url(<?= the_field('bg_hero');?> ); height:100vh;">
-    <nav class="navbar nav d-flex fixed-top"></nav>
-        <div class="d-flex flex-column align-items-center justify-content-center">
-            <h1 class="text-white" id="title-section1"><?= the_field('title_section1');?></h1>
-        </div>
-        <div class="d-flex flex-column justify-content-center ">
-            <p class="text-white"><?= the_field('scroll_text'); ?></p>
-            <div class="d-flex justify-content-center">
-            <a href="#"><img src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png" alt="Scrolldown button"></a>
+
+<section class="container-fluid d-flex align-items-center justify-content-center flex-column" id="hero-section"
+    style="background-image:url(<?= the_field('bg_hero');?> ); height:100vh;">
+
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-white" id="title-section1"><?= the_field('title_section1');?></h1>
+    </div>
+    <div class="d-flex flex-column justify-content-center ">
+        <p class="text-white"><?= the_field('scroll_text'); ?></p>
+        <div class="d-flex justify-content-center">
+            <a href="#section2"><img src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
+                    alt="Scrolldown button"></a>
         </div>
     </div>
 </section>
-
-
+<!--------------------------------------  FEATURES SECTION  ------------------------------------------->
 <section id="section2">
     <div class="container">
         <div class="row">
@@ -30,7 +33,7 @@ get_header();
     </div>
     <div id="containerBlock" class="container">
         <div class="row">
-        <?php
+            <?php
             if(get_field('bloc')){
                 while(the_repeater_field('bloc')){
                     echo '<div class="col-md-3 features">';
@@ -45,7 +48,37 @@ get_header();
     </div>
 </section>
 
-<section id="section4">         
+
+<!--------------------------------------  PROJECTS SECTION  ------------------------------------------->
+
+
+<?php $loop = new WP_Query( array( 'post_type' => 'projets', 'posts_per_page' => '2' ) ); ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php 
+       echo '
+        <section id="section3">
+            <div class="d-flex" id="projects-wrapper">
+                <div class="img-projects col-12 col-sm-12 col-md-6">
+                    <a href="'.get_permalink().'"><img src="'.get_field('img_project')[0]['images_du_projet'].'"/></a>
+                </div>
+                <div class="text-projects col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="mb-5">
+                        <h3>'.get_field('title_project').'</h3>
+                    </div>
+                    <div class="w-50">
+                        <p>'.get_field('description_project').'</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+       ';
+
+     endwhile; wp_reset_query(); ?>
+
+
+
+<section id="section4" class="pb-4">         
     <?php 
         // the query
         $the_query = new WP_Query( array(
@@ -58,9 +91,9 @@ get_header();
     <div class="row">
         <div id="letterBlock4">
             <div id="titleBlock4">
-                <?= get_field('title_section2');?>
+                <?= get_field('title_section3');?>
             </div>
-            <p><?= get_field('letter_section2')?></p>
+            <p><?= get_field('letter_section3')?></p>
         </div>
         <div id="catchsentence">
             <p><?= get_field('catchphrase')?></p>
@@ -95,28 +128,26 @@ get_header();
 </div>   
 </section>
 
-
 <section id="section5">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-            <!-- ajout de ma nouvelle widget area -->
-            <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
-                    <div id="header-widget-area-left" class="nwa-header-widget widget-area row" role="complementary">
-                        <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
-                    </div>
+                <!-- ajout de ma nouvelle widget area -->
+                <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
+                <div id="header-widget-area-left" class="nwa-header-widget widget-area row" role="complementary">
+                    <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
+                </div>
                 <?php endif; ?>
-            <!-- fin nouvelle widget area -->
+                <!-- fin nouvelle widget area -->
             </div>
             <div class="col-md-6">
                 <!-- ajout de ma nouvelle widget area -->
                 <?php if ( is_active_sidebar( 'new-widget-area-right' ) ) : ?>
-                    <div id="header-widget-area-right" class="nwa-header-widget widget-area row" role="complementary">
-                        <?php dynamic_sidebar( 'new-widget-area-right' ); ?>
-                    </div>
+                <div id="header-widget-area-right" class="nwa-header-widget widget-area row" role="complementary">
+                    <?php dynamic_sidebar( 'new-widget-area-right' ); ?>
+                </div>
                 <?php endif; ?>
-                
-            <!-- fin nouvelle widget area -->
+                <!-- fin nouvelle widget area -->
             </div>
         </div>
     </div>
