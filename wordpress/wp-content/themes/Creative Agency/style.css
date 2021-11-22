@@ -124,7 +124,7 @@ Version: 1.0
 
 #letterBlock4 p {
     color: #d21242;
-    font-size: 150px;
+    font-size: 15rem;
     font-weight: 800;
     width: fit-content;
     font-family: robotoblack;
@@ -134,8 +134,8 @@ Version: 1.0
     color: black;
     width: fit-content;
     position: absolute;
-    font-size: 25px;
-    transform: translateY(275%);
+    font-size: 2rem;
+    transform: translateY(315%);
 }
 
 #letterBlock4 {
@@ -240,6 +240,15 @@ a{
     background-color: #222222;
 }
 
+.colored-nav{
+    background-color: #222222;
+    transition: 0.3s;
+}
+.transparent-nav{
+    background-color: #22222200;
+    transition: 0.3s;
+}
+
 /* SECTION 1 */
 
 
@@ -294,7 +303,6 @@ a{
     justify-content: space-between;
 }
 
-<<<<<<< HEAD
 /* CONTACT */
 
 #contact-form-section{
@@ -317,8 +325,10 @@ a{
     color: #fff;
     border: #fff 1px solid;
     transition: 0.3s;
-=======
+
+}
+
+/* Footer */
 .footerWidgetBlock a{
     color: white;
->>>>>>> 3962429c1792d9d73c96dcadc003e80e2cd24009
 }

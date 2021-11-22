@@ -14,7 +14,7 @@ get_header();
     <div class="d-flex flex-column justify-content-center ">
         <p class="text-white"><?= the_field('scroll_text'); ?></p>
         <div class="d-flex justify-content-center">
-            <a href="#"><img src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
+            <a href="#section2"><img src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
                     alt="Scrolldown button"></a>
         </div>
     </div>
@@ -91,9 +91,9 @@ get_header();
     <div class="row">
         <div id="letterBlock4">
             <div id="titleBlock4">
-                <?= get_field('title_section2');?>
+                <?= get_field('title_section3');?>
             </div>
-            <p><?= get_field('letter_section2')?></p>
+            <p><?= get_field('letter_section3')?></p>
         </div>
         <div id="catchsentence">
             <p><?= get_field('catchphrase')?></p>

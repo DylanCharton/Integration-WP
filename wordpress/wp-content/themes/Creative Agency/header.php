@@ -16,7 +16,7 @@
 <body>
   <!-- NAV BAR -->
 
-  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"><img class="site-img" src="<?= get_site_icon_url()?>" >
+  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top transparent-nav" id="navTop"><img class="site-img" src="<?= get_site_icon_url()?>" >
     <div class="container-fluid d-flex container-tom">  
 
     
