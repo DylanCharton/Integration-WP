@@ -223,7 +223,6 @@ a{
     text-transform: capitalize;
 }
 .nwa-header-widget {
-    margin-top: 3em;
     padding: 2em;
 }
 
@@ -283,4 +282,37 @@ a{
 .container-tom {
     padding-top: 0.5rem;
     padding-left: 21rem;
+}
+
+#footer-widget{
+    color: white; 
+}
+
+.footerWidgetBlock{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CONTACT */
+
+#contact-form-section{
+    background-color: #d21242;
+    color : #fff;
+}
+
+#contact-form-section form {
+    text-align:center;
+}
+
+.btn-secondary:hover{
+    background-color: #fff;
+    color: #d21242;
+    border: #fff 1px solid;
+    transition: 0.3s;
+}
+.btn-secondary{
+    background-color: #d21242;
+    color: #fff;
+    border: #fff 1px solid;
+    transition: 0.3s;
 }

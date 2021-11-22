@@ -114,22 +114,6 @@ add_theme_support( 'customize-selective-refresh-widgets' );
  *
  * @return void
  */
-function creative_agency_widgets_init() {
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer', 'Creative Agency' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Rajoutez des widgets pour le pied-de-page.', 'Creative Agency' ),
-			'before_widget' => '<section id="footer-w" class="widget footer-w">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
-}
-add_action( 'widgets_init', 'creative_agency_widgets_init' );
-
 
 // Area Widjets section 5
 
@@ -163,54 +147,94 @@ function section5_right_widgets_init() {
    
 add_action( 'widgets_init', 'section5_right_widgets_init' );
 
+function footer_widgets_init() {
+ 
+	register_sidebar( array(
+   
+	'name' => 'Zone widgets footer',
+	'id' => 'hstngr_widget',
+	'before_widget' => '<div class="footerWidgetBlock">',
+	'after_widget' => '</div>',
+	'before_title' => '<p">',
+	'after_title' => '<p>',
+	) );
+   }
+   
+add_action( 'widgets_init', 'footer_widgets_init' );
 
 
+// Mon premier widget dynamique
+class mon_premier_widget_dynamique extends WP_Widget {
 
-function hstngr_register_widget() {
-	register_widget( 'hstngr_widget' );
+    function __construct() {
+        parent::__construct(
+            'mon_premier_widget_dynamique',
+            esc_html__( 'Mon premier widget dynamique', 'textdomain' ),
+            array( 'description' => esc_html__( 'Affiche les coordonnées', 'textdomain' ), )
+        );
+    }
+
+    private $widget_fields = array(
+        array(
+            'label' => 'Copyright',
+            'id' => 'nom_text',
+            'type' => 'text',
+        ),
+        array(
+            'label' => 'Designer',
+            'id' => 'adresse_text',
+            'type' => 'text',
+        ),
+    );
+
+    public function widget( $args, $instance ) {
+        echo $args['before_widget'];
+
+        // Output generated fields
+        echo '<div>'.$instance['nom_text'].'</div>';
+        echo '<div>'.$instance['adresse_text'].'</div>';
+
+        
+        echo $args['after_widget'];
+    }
+
+    public function field_generator( $instance ) {
+        $output = '';
+        foreach ( $this->widget_fields as $widget_field ) {
+            $default = '';
+            if ( isset($widget_field['default']) ) {
+                $default = $widget_field['default'];
+            }
+            $widget_value = ! empty( $instance[$widget_field['id']] ) ? $instance[$widget_field['id']] : esc_html__( $default, 'textdomain' );
+            switch ( $widget_field['type'] ) {
+                default:
+                    $output .= '<p>';
+                    $output .= '<label for="'.esc_attr( $this->get_field_id( $widget_field['id'] ) ).'">'.esc_attr( $widget_field['label'], 'textdomain' ).':</label> ';
+                    $output .= '<input class="widefat" id="'.esc_attr( $this->get_field_id( $widget_field['id'] ) ).'" name="'.esc_attr( $this->get_field_name( $widget_field['id'] ) ).'" type="'.$widget_field['type'].'" value="'.esc_attr( $widget_value ).'">';
+                    $output .= '</p>';
+            }
+        }
+        echo $output;
+    }
+
+    public function form( $instance ) {
+        $this->field_generator( $instance );
+    }
+
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        foreach ( $this->widget_fields as $widget_field ) {
+            switch ( $widget_field['type'] ) {
+                default:
+                    $instance[$widget_field['id']] = ( ! empty( $new_instance[$widget_field['id']] ) ) ? strip_tags( $new_instance[$widget_field['id']] ) : '';
+            }
+        }
+        return $instance;
+    }
 }
-	
-	add_action( 'widgets_init', 'hstngr_register_widget' );
-	
-class hstngr_widget extends WP_Widget {
-	
-	function __construct() {
-		parent::__construct(
-		// widget ID
-		'hstngr_widget',
-		// widget name
-		__('Widget-Footer-Style', ' hstngr_widget_domain'),
-		// widget description
-		array( 'description' => __( 'Hostinger Widget Tutorial', 'hstngr_widget_domain' ), )
-		);
-	}
-		public function widget( $args, $instance ) {
-		$title = apply_filters( 'widget_title', $instance['title'] );
-		echo $args['before_widget'];
-		//if title is present
-		if ( ! empty( $title ) )
-		echo $args['before_title'] . $title . $args['after_title'];
-		//output
-		echo __( 'Hello, World from Hostinger.com', 'hstngr_widget_domain' );
-		echo $args['after_widget'];
-	}
-	public function form( $instance ) {
-		if ( isset( $instance[ 'title' ] ) )
-		$title = $instance[ 'title' ];
-		else
-		$title = __( 'Default Title', 'hstngr_widget_domain' );
-		?>
-	<p>
-		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
-		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
-			name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-	</p>
-	<?php
-	}
-	public function update( $new_instance, $old_instance ) {
-		$instance = array();
-		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-		return $instance;
-	}
-	
+
+add_action( 'widgets_init', 'register_mon_premier_widget_dynamique' );
+
+function register_mon_premier_widget_dynamique() {
+    register_widget( 'mon_premier_widget_dynamique' );
 }

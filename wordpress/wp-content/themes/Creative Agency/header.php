@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+  <?php wp_head(); ?>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -13,11 +14,9 @@
 </head>
 
 <body>
-
-
   <!-- NAV BAR -->
 
-  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"> <img class="site-img" src="<?= get_site_icon_url()?>" >
+  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"><img class="site-img" src="<?= get_site_icon_url()?>" >
     <div class="container-fluid d-flex container-tom">  
 
     
