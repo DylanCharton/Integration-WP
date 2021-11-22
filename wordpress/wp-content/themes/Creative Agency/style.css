@@ -106,8 +106,10 @@ Version: 1.0
 }
 
 .img-projects img{
-    /* height: 3rem; */
+    height: 30rem; 
     width: 100%;
+    object-fit: cover;
+    
 }
 #section3:nth-child(even) .img-projects {
     order : 2;
@@ -132,4 +134,28 @@ background-repeat: no-repeat;
 
 #menu-navigation a{
     color: white;
+}
+
+/* CONTACT */
+
+#contact-form-section{
+    background-color: #d21242;
+    color : #fff;
+}
+
+#contact-form-section form {
+    text-align:center;
+}
+
+.btn-secondary:hover{
+    background-color: #fff;
+    color: #d21242;
+    border: #fff 1px solid;
+    transition: 0.3s;
+}
+.btn-secondary{
+    background-color: #d21242;
+    color: #fff;
+    border: #fff 1px solid;
+    transition: 0.3s;
 }
