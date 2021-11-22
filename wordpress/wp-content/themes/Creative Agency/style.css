@@ -94,6 +94,7 @@ Version: 1.0
     margin-bottom: 2rem ;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 
 .article p{
@@ -293,6 +294,7 @@ a{
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 /* CONTACT */
 
 #contact-form-section{
@@ -315,4 +317,8 @@ a{
     color: #fff;
     border: #fff 1px solid;
     transition: 0.3s;
+=======
+.footerWidgetBlock a{
+    color: white;
+>>>>>>> 3962429c1792d9d73c96dcadc003e80e2cd24009
 }
