@@ -58,10 +58,10 @@ get_header();
        echo '
         <section id="section3">
             <div class="d-flex" id="projects-wrapper">
-                <div class="img-projects col-6">
+                <div class="img-projects col-12 col-sm-12 col-md-6">
                     <a href="'.get_permalink().'"><img src="'.get_field('img_project')[0]['images_du_projet'].'"/></a>
                 </div>
-                <div class="text-projects col-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="text-projects col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
                     <div class="mb-5">
                         <h3>'.get_field('title_project').'</h3>
                     </div>
@@ -78,7 +78,7 @@ get_header();
 
 
 
-<section id="section4">         
+<section id="section4" class="pb-4">         
     <?php 
         // the query
         $the_query = new WP_Query( array(
