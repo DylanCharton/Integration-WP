@@ -1,12 +1,10 @@
 <footer>
     <section id="footer">
         <div class="container">
-            <div class="col-md-6"></div>
-            <div class="col-md-6"></div>
             <!-- ajout de ma nouvelle widget area -->
-            <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-                    <div id="header-widget-area-left" class="nwa-header-widget widget-area row" role="complementary">
-                        <?php dynamic_sidebar( 'sidebar-1' ); ?>
+            <?php if ( is_active_sidebar( 'hstngr_widget' ) ) : ?>
+                    <div id="footer-widget" class="nwa-header-widget widget-area row" role="complementary">
+                        <?php dynamic_sidebar( 'hstngr_widget' ); ?>
                     </div>
                 <?php endif; ?>
             <!-- fin nouvelle widget area -->

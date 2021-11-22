@@ -180,7 +180,6 @@ a:hover{
     text-transform: capitalize;
 }
 .nwa-header-widget {
-    margin-top: 3em;
     padding: 2em;
 }
 
@@ -247,4 +246,13 @@ a:hover{
 
     padding-top: 0.5rem;
     padding-left: 21rem;
+}
+
+#footer-widget{
+    color: white; 
+}
+
+.footerWidgetBlock{
+    display: flex;
+    justify-content: space-between;
 }
