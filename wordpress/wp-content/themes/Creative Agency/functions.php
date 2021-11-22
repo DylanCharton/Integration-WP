@@ -155,8 +155,8 @@ function footer_widgets_init() {
 	'id' => 'hstngr_widget',
 	'before_widget' => '<div class="footerWidgetBlock">',
 	'after_widget' => '</div>',
-	'before_title' => '<p>',
-	'after_title' => '</p>',
+	'before_title' => '',
+	'after_title' => '',
 	) );
    }
    
