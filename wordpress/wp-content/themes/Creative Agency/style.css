@@ -196,3 +196,55 @@ a:hover{
 #footer{
     background-color: #222222;
 }
+/* SECTION 1 */
+
+
+#title-section1{
+    font-size: 10rem;
+}
+
+#hero-section{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CSS TOMMY */
+
+#nav-tom {
+
+    background-repeat: no-repeat;
+    
+}
+
+#menu-navigation a{
+
+    color: white;
+}
+
+.site-img {
+
+    margin-left: 15rem;
+
+ 
+}
+
+.nav-tom {
+    padding-top: 2rem;
+    color: #ffffff61;
+    border-bottom: solid 1px;
+   
+}
+
+.nav-item {
+
+    margin-right: 1.5rem;
+    size: 2rem;
+
+}
+
+.container-tom {
+
+    padding-top: 0.5rem;
+    padding-left: 21rem;
+}
