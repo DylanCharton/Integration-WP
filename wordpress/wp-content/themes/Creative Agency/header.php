@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+  <?php wp_head(); ?>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -9,17 +10,14 @@
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= the_title() ?></title>
+  <title>ACS - <?= the_title() ?></title>
 </head>
 
 <body>
-
   <!-- NAV BAR -->
 
-  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top"> <img class="site-img"
-      src="<?= get_site_icon_url()?>">
-    <div class="container-fluid d-flex container-tom">
-
+  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top transparent-nav" id="navTop"><img class="site-img" src="<?= get_site_icon_url()?>" >
+    <div class="container-fluid d-flex container-tom">  
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,13 +33,11 @@
 
     ]) 
     ?>
-
-
       </div>
     </div>
   </nav>
 
-  <!-- Fin de nav bar  -->
+ 
 
 </body>
 

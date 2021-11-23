@@ -6,7 +6,6 @@ Author URI: https://www.accesscodeschool.fr/
 Description: Thème intégré par Tommy, Alaeddin et Dylan
 Version: 1.0
 */
-
 @font-face {
     font-family: 'robotoblack';
     src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
@@ -15,6 +14,58 @@ Version: 1.0
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'gothambold';
+    src: url('assets/fonts/gotham-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambold2';
+    src: url('assets/fonts/gothambold-webfont.woff2') format('woff2'),
+         url('assets/fonts/gothambold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('assets/fonts/gothambook-webfont.woff2') format('woff2'),
+         url('assets/fonts/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('assets/fonts/gothammedium-webfont.woff2') format('woff2'),
+         url('assets/fonts/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothamblack';
+    src: url('assets/fonts/gotham-black-webfont.woff2') format('woff2'),
+         url('assets/fonts/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL */
+
+h1{
+    font-family : 'gothambold';
+}
+h3{
+    font-family: 'gothammedium';
+    font-size : 1.5rem;
+}
+
+
 /* SECTION 1 */
 
 #title-section1{
@@ -49,6 +100,7 @@ Version: 1.0
     position: absolute;
     font-size: 25px;
     transform: translateY(275%);
+    font-family: 'gothammedium';
 }
 
 .features {
@@ -66,10 +118,13 @@ Version: 1.0
 
 #titleBloc {
     margin: 3rem 0;
+    font-family: 'gothammedium';
 }
 
 #descriptionBloc {
     margin-bottom: 50px;
+    font-family: 'gothambook';
+    font-size : 0.9rem;
 }
 
 #section2 {
@@ -81,22 +136,34 @@ Version: 1.0
     text-align: justify;
 }
 
+@media screen and (max-width:768px){
 .article{
     display: flex;
     flex-direction: column;
 }
+}
+
+/* ARTICLES */
 
 .article img{
     height: 280px;
     width: 280px;
-    object-fit: fill;
+    object-fit: cover;
     margin-bottom: 2rem ;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 
 .article p{
     text-align: center;
+}
+
+.img-article{
+    width : 100%;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.93); 
+    box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.93);
 }
 
 .titleArticle{
@@ -104,36 +171,33 @@ Version: 1.0
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    font-family: "gotham"
 }
 
-.titleArticle:hover{
-    text-decoration-line: underline;
-}
 .descriptionArticle{
     margin-bottom: 2rem;
     width: 80%;
     margin: 0 auto;
     text-align: justify;
-}
-
-#section4{
-    padding: 4rem 0;
+    font-family: 'gothambook'
 }
 
 #letterBlock4 p {
     color: #d21242;
-    font-size: 150px;
+    font-size: 15rem;
     font-weight: 800;
     width: fit-content;
     font-family: robotoblack;
+    margin-bottom : -4rem;
 }
 
 #titleBlock4 {
     color: black;
     width: fit-content;
     position: absolute;
-    font-size: 25px;
-    transform: translateY(275%);
+    font-size: 2rem;
+    transform: translateY(315%);
+    font-family: 'gothammedium';
 }
 
 #letterBlock4 {
@@ -149,6 +213,8 @@ Version: 1.0
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    font-family : 'gothammedium';
+    font-size : 1.5rem;
 }
 
 #rowAnnonce{
@@ -159,8 +225,15 @@ Version: 1.0
     background-color: #d21242;
 }
 
+#sectionArticle{
+    min-height: calc(100vh - 136px);
+    display: flex;
+    align-items: center;
+    background-color: #d21242;
+    color: #fff;
+}
+
 @media screen and (max-width:750px){
-@media screen and (max-width:768px){
     #titleBlock1 {
         color: white;
         width: fit-content;
@@ -170,6 +243,47 @@ Version: 1.0
     }
 }
 
+/* PROJECT PAGES */
+
+.carousel-item{
+    height : 30rem;
+    width : 50rem;
+}
+
+.carousel-item img{
+    object-fit :contain;
+}
+
+.section3{
+    height : fit-content;
+}
+
+.img-projects img{
+    height: 30rem; 
+    width: 100%;
+    object-fit: cover;
+    
+}
+.section3:nth-child(even) .img-projects {
+    order : 2;
+    
+}
+.section3:nth-child(even) .text-projects {
+    background-color: #222222;
+    color: #fff;
+}
+.section:nth-child(odd) .text-projects {
+    background-color: #f3f3f3;
+    
+}
+.description-project{
+    font-family: "gothambook";
+    font-size : 0.9rem;
+    text-align: justify;
+}
+
+
+/* CSS NAV */
 
 a{
     color: black;
@@ -181,19 +295,15 @@ a{
     font-style: normal;
     text-decoration: none; 
 }
-
-a:hover{
-    color: black;
-}
-
-   
+  
 .nwa-title{
     margin-bottom: 1em;
     text-transform: capitalize;
 }
 .nwa-header-widget {
-    margin-top: 3em;
     padding: 2em;
+    flex-wrap: nowrap;
+    color: #fff;
 }
 
 .nwa-header-widget img{
@@ -207,7 +317,20 @@ a:hover{
 
 #footer{
     background-color: #222222;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
+
+.colored-nav{
+    background-color: #222222;
+    transition: 0.3s;
+}
+.transparent-nav{
+    background-color: #22222200;
+    transition: 0.3s;
+}
+
 /* SECTION 1 */
 
 
@@ -224,49 +347,7 @@ a:hover{
 /* CSS TOMMY */
 
 #nav-tom {
-
     background-repeat: no-repeat;
-    
-}
-
-/* PROJECT PAGES */
-
-.carousel-item{
-    height : 30rem;
-    width : 50rem;
-}
-
-.carousel-item img{
-    object-fit :contain;
-}
-
-#section3{
-    height : fit-content;
-}
-
-.img-projects img{
-    /* height: 3rem; */
-    width: 100%;
-}
-#section3:nth-child(even) .img-projects {
-    order : 2;
-    
-}
-#section3:nth-child(even) .text-projects {
-    background-color: #222222;
-    color: #fff;
-}
-#section3:nth-child(odd) .text-projects {
-    background-color: #f3f3f3;
-    
-}
-
-
-/* CSS NAV */
-#nav-tom {
-
-background-repeat: no-repeat;
-
 }
 
 #menu-navigation a{
@@ -274,29 +355,60 @@ background-repeat: no-repeat;
 }
 
 .site-img {
-
-    margin-left: 15rem;
-
- 
+    margin-left: 15rem; 
 }
 
 .nav-tom {
     padding-top: 2rem;
     color: #ffffff61;
-    border-bottom: solid 1px;
-   
+    border-bottom: solid 1px;  
 }
 
 .nav-item {
-
     margin-right: 1.5rem;
     size: 2rem;
-
 }
 
 .container-tom {
-
     padding-top: 0.5rem;
     padding-left: 21rem;
-    
+}
+
+#footer-widget{
+    color: white; 
+}
+
+.footerWidgetBlock{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CONTACT */
+
+#contact-form-section{
+    background-color: #d21242;
+    color : #fff;
+}
+
+#contact-form-section form {
+    text-align:center;
+}
+
+.btn-secondary:hover{
+    background-color: #fff;
+    color: #d21242;
+    border: #fff 1px solid;
+    transition: 0.3s;
+}
+.btn-secondary{
+    background-color: #d21242;
+    color: #fff;
+    border: #fff 1px solid;
+    transition: 0.3s;
+
+}
+
+/* Footer */
+.footerWidgetBlock a{
+    color: white;
 }
