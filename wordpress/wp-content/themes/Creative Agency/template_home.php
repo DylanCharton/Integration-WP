@@ -56,22 +56,22 @@ get_header();
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 <?php 
        echo '
-        <section id="section3">
-            <div class="d-flex" id="projects-wrapper">
+        <div class="section3">
+            <div class="d-flex" class="projects-wrapper">
                 <div class="img-projects col-12 col-sm-12 col-md-6">
                     <a href="'.get_permalink().'"><img src="'.get_field('img_project')[0]['images_du_projet'].'"/></a>
                 </div>
-                <div class="text-projects col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="text-projects col-sm-12 col-md-6 d-flex flex-column justify-content-center ps-5">
                     <div class="mb-5">
                         <h3>'.get_field('title_project').'</h3>
                     </div>
-                    <div class="w-50">
+                    <div class="w-75 description-project">
                         <p>'.get_field('description_project').'</p>
                     </div>
 
                 </div>
             </div>
-        </section>
+        </div>
        ';
 
      endwhile; wp_reset_query(); ?>
@@ -109,14 +109,15 @@ get_header();
                 $the_query->the_post();
                 // echo wp_count_posts();
                 $link = get_the_permalink();
-                echo '<div class="article col-12 col-lg-3">';
-                echo '<a  href='.$link.' target="_blank">';
-                echo '<img src="'.get_field('img_article').'"/>';
-                echo '</a>';
-                echo '<a  href='.$link.' target="_blank">';
-                echo '<div class="titleArticle">'.get_the_title().'</div>';
-                echo '</a>';
-                echo '<div class="descriptionArticle">'.get_field('description_article').'</div>';
+                echo '<div class="article col-md-3">';
+                    echo '<a  href='.$link.' target="_blank">';
+                        echo '<img src="'.get_field('img_article').'"/>';
+                    echo '</a>';
+                    echo '<a  href='.$link.' target="_blank">';
+                        echo '<div class="titleArticle">'.get_the_title().'</div>';
+                    echo '</a>';
+                    echo '<div class="descriptionArticle">'.get_field('description_article').'</div>';
+                // echo get_the_ID();
                 echo '</div>';
             }
             wp_reset_postdata(); 

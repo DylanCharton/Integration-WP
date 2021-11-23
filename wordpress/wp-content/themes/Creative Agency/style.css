@@ -14,6 +14,58 @@ Version: 1.0
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'gothambold';
+    src: url('assets/fonts/gotham-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambold2';
+    src: url('assets/fonts/gothambold-webfont.woff2') format('woff2'),
+         url('assets/fonts/gothambold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('assets/fonts/gothambook-webfont.woff2') format('woff2'),
+         url('assets/fonts/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('assets/fonts/gothammedium-webfont.woff2') format('woff2'),
+         url('assets/fonts/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothamblack';
+    src: url('assets/fonts/gotham-black-webfont.woff2') format('woff2'),
+         url('assets/fonts/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL */
+
+h1{
+    font-family : 'gothambold';
+}
+h3{
+    font-family: 'gothammedium';
+    font-size : 1.5rem;
+}
+
+
 /* SECTION 1 */
 
 #title-section1{
@@ -48,6 +100,7 @@ Version: 1.0
     position: absolute;
     font-size: 25px;
     transform: translateY(275%);
+    font-family: 'gothammedium';
 }
 
 .features {
@@ -65,10 +118,13 @@ Version: 1.0
 
 #titleBloc {
     margin: 3rem 0;
+    font-family: 'gothammedium';
 }
 
 #descriptionBloc {
     margin-bottom: 50px;
+    font-family: 'gothambook';
+    font-size : 0.9rem;
 }
 
 #section2 {
@@ -115,6 +171,7 @@ Version: 1.0
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    font-family: "gotham"
 }
 
 .descriptionArticle{
@@ -122,6 +179,7 @@ Version: 1.0
     width: 80%;
     margin: 0 auto;
     text-align: justify;
+    font-family: 'gothambook'
 }
 
 #letterBlock4 p {
@@ -130,6 +188,7 @@ Version: 1.0
     font-weight: 800;
     width: fit-content;
     font-family: robotoblack;
+    margin-bottom : -4rem;
 }
 
 #titleBlock4 {
@@ -138,6 +197,7 @@ Version: 1.0
     position: absolute;
     font-size: 2rem;
     transform: translateY(315%);
+    font-family: 'gothammedium';
 }
 
 #letterBlock4 {
@@ -153,6 +213,8 @@ Version: 1.0
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    font-family : 'gothammedium';
+    font-size : 1.5rem;
 }
 
 #rowAnnonce{
@@ -192,7 +254,7 @@ Version: 1.0
     object-fit :contain;
 }
 
-#section3{
+.section3{
     height : fit-content;
 }
 
@@ -202,17 +264,22 @@ Version: 1.0
     object-fit: cover;
     
 }
-#section3:nth-child(even) .img-projects {
+.section3:nth-child(even) .img-projects {
     order : 2;
     
 }
-#section3:nth-child(even) .text-projects {
+.section3:nth-child(even) .text-projects {
     background-color: #222222;
     color: #fff;
 }
-#section3:nth-child(odd) .text-projects {
+.section:nth-child(odd) .text-projects {
     background-color: #f3f3f3;
     
+}
+.description-project{
+    font-family: "gothambook";
+    font-size : 0.9rem;
+    text-align: justify;
 }
 
 
@@ -235,6 +302,8 @@ a{
 }
 .nwa-header-widget {
     padding: 2em;
+    flex-wrap: nowrap;
+    color: #fff;
 }
 
 .nwa-header-widget img{
