@@ -9,8 +9,7 @@ get_header();
 
     <div class="d-flex flex-column align-items-center justify-content-center">
         <h1 class="text-white" id="title-section1"><?= get_the_title();?></h1>
-    </div>
-    
+    </div>    
 </section>
 
 <?php

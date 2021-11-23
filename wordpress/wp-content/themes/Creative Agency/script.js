@@ -1,4 +1,4 @@
-let nav = document.querySelector('#navTop');
+let nav = document.querySelector('#header-widget');
 window.onscroll = function (){
     if(document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50){
         nav.classList.add("colored-nav");

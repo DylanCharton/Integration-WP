@@ -34,6 +34,7 @@ add_filter('nav_menu_link_attributes', 'montheme_menu_link_class');
 
 
 
+
 /*
 * On utilise une fonction pour créer notre custom post type 'Projets'
 */
@@ -148,6 +149,22 @@ function section5_right_widgets_init() {
    
 add_action( 'widgets_init', 'section5_right_widgets_init' );
 
+//Area widget header
+function header_widgets_init() {
+
+	register_sidebar( array(
+	
+	'name' => 'Zone widgets header',
+	'id' => 'hstngr_widget_header',
+	'before_widget' => '<div class="col-4 d-flex justify-content-center align-item_center">',
+	'after_widget' => '</div>',
+	'before_title' => '',
+	'after_title' => '',
+	) );
+}
+	   
+add_action( 'widgets_init', 'header_widgets_init' );
+
 // Area Widjets section 5 footer
 function footer_widgets_init() {
  
@@ -217,33 +234,55 @@ class wpb_widget extends WP_Widget {
 <p>
 	<label for="<?php echo $this->get_field_id( 'title1' ); ?>"><?php _e( 'Designer :' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'title1' ); ?>"
-		name="<?php echo $this->get_field_name( 'title1' ); ?>" type="text" value="<?php echo esc_attr( $title1 ); ?>" />
+		name="<?php echo $this->get_field_name( 'title1' ); ?>" type="text"
+		value="<?php echo esc_attr( $title1 ); ?>" />
 </p>
 <?php 
 	}
 		  
 	// Updating widget replacing old instances with new
-	public function update( $new_instance, $old_instance ) {
-	$instance = array();
-	$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-	$instance['title1'] = ( ! empty( $new_instance['title1'] ) ) ? strip_tags( $new_instance['title1'] ) : '';
-	return $instance;
-	}
+public function update( $new_instance, $old_instance ) {
+$instance = array();
+$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+$instance['title1'] = ( ! empty( $new_instance['title1'] ) ) ? strip_tags( $new_instance['title1'] ) : '';
+return $instance;
+}
 	 
 	// Class wpb_widget ends here
-	} 
+} 
 
-	// Register and load the widget
-	function wpb_load_widget() {
-		register_widget( 'wpb_widget' );
-	}
-	add_action( 'widgets_init', 'wpb_load_widget' );
+// Register and load the widget
+function wpb_load_widget() {
+	register_widget( 'wpb_widget' );
+}
+add_action( 'widgets_init', 'wpb_load_widget' );
 
 
 
-	// // Mon premier widget dynamique
+
+// /* active nav */
+// add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+// function special_nav_class ($classes, $item) {
+// 	if (in_array('current-menu-item', $classes) ){
+// 		$classes[] = 'active ';
+// 	}
+	
+// 	return $classes;
+// }
+
+function my_special_nav_class( $classes, $item ) {
+    if ( is_single() && $item->title == 'Home' ) {
+        $classes[] = 'special-class';
+    }
+    return $classes;
+}
+add_filter( 'nav_menu_css_class', 'my_special_nav_class', 10, 2 );
+
+
+
+// // Mon premier widget dynamique
 // class mon_premier_widget_dynamique extends WP_Widget {
-
 //     function __construct() {
 //         parent::__construct(
 //             'mon_premier_widget_dynamique',
