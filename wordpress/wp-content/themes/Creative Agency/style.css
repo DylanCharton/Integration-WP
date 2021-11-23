@@ -227,6 +227,8 @@ a{
 }
 .nwa-header-widget {
     padding: 2em;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .nwa-header-widget img{
@@ -306,6 +308,10 @@ a{
 .footerWidgetBlock{
     display: flex;
     justify-content: space-between;
+}
+
+.textwidget{
+    color: white;
 }
 
 /* CONTACT */
