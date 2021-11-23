@@ -6,10 +6,7 @@ Author URI: https://www.accesscodeschool.fr/
 Description: Thème intégré par Tommy, Alaeddin et Dylan
 Version: 1.0
 */
-<<<<<<< HEAD
 
-=======
->>>>>>> 98e3c420fccaa0c3022f49dd3d26fa0a18568b66
 @font-face {
     font-family: 'robotoblack';
     src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
@@ -84,7 +81,6 @@ Version: 1.0
     text-align: justify;
 }
 
-<<<<<<< HEAD
 .article{
     display: flex;
     flex-direction: column;
@@ -164,9 +160,7 @@ Version: 1.0
 }
 
 @media screen and (max-width:750px){
-=======
 @media screen and (max-width:768px){
->>>>>>> 98e3c420fccaa0c3022f49dd3d26fa0a18568b66
     #titleBlock1 {
         color: white;
         width: fit-content;
@@ -175,7 +169,6 @@ Version: 1.0
         font-size: 17px;
     }
 }
-<<<<<<< HEAD
 
 
 a{
@@ -234,7 +227,7 @@ a:hover{
 
     background-repeat: no-repeat;
     
-=======
+}
 
 /* PROJECT PAGES */
 
@@ -274,13 +267,11 @@ a:hover{
 
 background-repeat: no-repeat;
 
->>>>>>> 98e3c420fccaa0c3022f49dd3d26fa0a18568b66
 }
 
 #menu-navigation a{
     color: white;
 }
-<<<<<<< HEAD
 
 .site-img {
 
@@ -308,5 +299,3 @@ background-repeat: no-repeat;
     padding-top: 0.5rem;
     padding-left: 21rem;
 }
-=======
->>>>>>> 98e3c420fccaa0c3022f49dd3d26fa0a18568b66

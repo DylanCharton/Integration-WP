@@ -32,18 +32,6 @@ get_header();
     <div id="containerBlock" class="container">
         <div class="row">
             <?php
-<<<<<<< HEAD
-if(get_field('bloc')){
-while(the_repeater_field('bloc')){
-echo '<div class="col-md-3 features">';
-echo '<img src="'.get_sub_field('icon_bloc').'">';
-echo '<div id="titleBloc">'.get_sub_field('title_bloc').'</div>';
-echo '<div id="descriptionBloc">'.get_sub_field('description_bloc').'</div>';
-echo '</div>';
-}
-}
-?>
-=======
             
             if(get_field('bloc')){
                 while(the_repeater_field('bloc')){
@@ -55,7 +43,6 @@ echo '</div>';
                 }
             }
         ?>
->>>>>>> 98e3c420fccaa0c3022f49dd3d26fa0a18568b66
         </div>
     </div>
 </section>
