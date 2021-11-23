@@ -171,7 +171,7 @@ h3{
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-    font-family: "gotham"
+    font-family: "gothammedium"
 }
 
 .descriptionArticle{
@@ -233,7 +233,7 @@ h3{
     color: #fff;
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:768px){
     #titleBlock1 {
         color: white;
         width: fit-content;
@@ -245,8 +245,11 @@ h3{
 
 /* PROJECT PAGES */
 
+#single-project{
+    background-color: #d21242;
+    color:#fff
+}
 .carousel-item{
-    height : 30rem;
     width : 50rem;
 }
 
@@ -311,6 +314,13 @@ h3{
 }
 #allProjects{
     background-color: #d21242;
+}
+
+@media screen and (max-width:768px) {
+    .section3:nth-child(even) .img-projects {
+        order : 0!important;
+        
+    }
 }
 
 /* CSS NAV */

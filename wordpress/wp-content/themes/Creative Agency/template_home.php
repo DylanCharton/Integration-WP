@@ -61,7 +61,7 @@ get_header();
                 <div class="img-projects col-12 col-sm-12 col-md-6">
                     <a href="'.get_permalink().'"><img src="'.get_field('img_project')[0]['images_du_projet'].'"/></a>
                 </div>
-                <div class="text-projects col-sm-12 col-md-6 d-flex flex-column justify-content-center ps-5">
+                <div class="text-projects pt-4 pt-md-0 col-sm-12 col-md-6 d-flex flex-column justify-content-center ps-0 ps-md-5 align-items-center">
                     <div class="mb-5">
                         <h3>'.get_field('title_project').'</h3>
                     </div>
@@ -95,7 +95,7 @@ get_header();
             </div>
             <p><?= get_field('letter_section3')?></p>
         </div>
-        <div id="catchsentence">
+        <div id="catchsentence" class="text-center">
             <p><?= get_field('catchphrase')?></p>
         </div>
     </div>
