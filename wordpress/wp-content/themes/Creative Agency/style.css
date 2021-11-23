@@ -96,7 +96,7 @@ h3{
 
 #titleBlock2 {
     color: white;
-    width: fit-content;
+    width: max-content;
     position: absolute;
     font-size: 25px;
     transform: translateY(275%);
@@ -193,7 +193,7 @@ h3{
 
 #titleBlock4 {
     color: black;
-    width: fit-content;
+    width: max-content;
     position: absolute;
     font-size: 2rem;
     transform: translateY(315%);
@@ -233,15 +233,7 @@ h3{
     color: #fff;
 }
 
-@media screen and (max-width:750px){
-    #titleBlock1 {
-        color: white;
-        width: fit-content;
-        position: absolute;
-        transform: translateY(430%);
-        font-size: 17px;
-    }
-}
+
 
 /* PROJECT PAGES */
 
@@ -302,8 +294,8 @@ a{
 }
 .nwa-header-widget {
     padding: 2em;
+    display: flex;
     flex-wrap: nowrap;
-    color: #fff;
 }
 
 .nwa-header-widget img{
@@ -347,31 +339,23 @@ a{
 /* CSS TOMMY */
 
 #nav-tom {
+
     background-repeat: no-repeat;
+    
 }
 
 #menu-navigation a{
     color: white;
 }
 
-.site-img {
-    margin-left: 15rem; 
-}
-
 .nav-tom {
     padding-top: 2rem;
-    color: #ffffff61;
-    border-bottom: solid 1px;  
+  
 }
 
 .nav-item {
     margin-right: 1.5rem;
     size: 2rem;
-}
-
-.container-tom {
-    padding-top: 0.5rem;
-    padding-left: 21rem;
 }
 
 #footer-widget{
@@ -381,6 +365,10 @@ a{
 .footerWidgetBlock{
     display: flex;
     justify-content: space-between;
+}
+
+.textwidget{
+    color: white;
 }
 
 /* CONTACT */
@@ -412,3 +400,76 @@ a{
 .footerWidgetBlock a{
     color: white;
 }
+
+.menu-item{
+    border-bottom: 3px solid #d21242;
+}
+
+#navbarSupportedContent{
+    display: flex;
+    justify-content: center;
+}
+
+#header-widget ul{
+    display: flex;
+    list-style:none;
+    align-items: center;
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    display: block;
+}
+#header-widget{
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 2rem;
+    z-index: 10;
+    color: rgba(255, 255, 255, 0);
+    border-bottom: solid 1px #ffffff61;
+}
+
+#header-widget a{
+    margin: 0 1rem;
+    color: white;
+}
+
+#header-widget img{
+    margin: 1rem 0;
+}
+
+#header-widget nav{
+height: 100%;
+}
+
+/* #header-widget li a:hover {
+    border-bottom: 5px solid #d21242 ;
+    color: white;
+} */
+
+.current_page_item{
+    border-bottom: 5px solid #d21242 ;
+    height : 100%;
+}
+
+/* ::-webkit-scrollbar-thumb{
+    background: #d21242;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner{
+    background: #d21242;
+} */
+
+
+/* #header-widget li:first-child:hover > a{border-bottom: 3px solid red;}
+#header-widget li:nth-child(2):hover > a{border-bottom: 3px solid blue;}
+#header-widget li:nth-child(3):hover > a{border-bottom: 3px solid green;}
+#header-widget li:nth-child(4):hover > a{border-bottom: 3px solid gray;}
+#header-widget li:nth-child(5):hover > a{border-bottom: 3px solid white;}
+#header-widget li:last-child:hover > a{border-bottom: 3px solid lime;} */

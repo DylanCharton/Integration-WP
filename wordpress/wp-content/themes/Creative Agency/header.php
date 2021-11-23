@@ -13,32 +13,15 @@
   <title>ACS - <?= the_title() ?></title>
 </head>
 
-<body>
-  <!-- NAV BAR -->
-
-  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top transparent-nav" id="navTop"><img class="site-img" src="<?= get_site_icon_url()?>" >
-    <div class="container-fluid d-flex container-tom">  
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:white">
-
-        <?php wp_nav_menu([
-
-      'theme_location' => 'header',
-      'container' => false,
-      'menu_class' => 'navbar-nav me-auto'
-
-    ]) 
-    ?>
+  <body>
+    <!-- NAV BAR -->
+    <!-- ajout de ma nouvelle widget area -->
+    <?php if ( is_active_sidebar( 'hstngr_widget_header' ) ) : ?>
+      <div id="header-widget" class="row transparent-nav nav_menu_css_class" role="complementary">
+          <?php dynamic_sidebar( 'hstngr_widget_header' );?>
       </div>
-    </div>
-  </nav>
-
- 
-
-</body>
+    <?php endif; ?>
+    <!-- fin nouvelle widget area -->
+  </body>
 
 </html>
