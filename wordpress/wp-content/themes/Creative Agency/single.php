@@ -19,7 +19,7 @@
                     echo '<div class="article col-md-6">';
                     echo '<img src="'.get_field('img_article').'"/>';
                     echo '<div class="titleArticle">'.get_the_title().'</div>';
-                    the_excerpt();
+                    the_content();
                     get_the_ID();
                     echo '</div>';
                 }

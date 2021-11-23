@@ -44,7 +44,7 @@ Version: 1.0
 
 #titleBlock2 {
     color: white;
-    width: fit-content;
+    width: max-content;
     position: absolute;
     font-size: 25px;
     transform: translateY(275%);
@@ -129,7 +129,7 @@ Version: 1.0
 
 #titleBlock4 {
     color: black;
-    width: fit-content;
+    width: max-content;
     position: absolute;
     font-size: 2rem;
     transform: translateY(315%);
@@ -164,15 +164,7 @@ Version: 1.0
     align-items: center;
 }
 
-@media screen and (max-width:750px){
-    #titleBlock1 {
-        color: white;
-        width: fit-content;
-        position: absolute;
-        transform: translateY(430%);
-        font-size: 17px;
-    }
-}
+
 
 /* PROJECT PAGES */
 
@@ -271,7 +263,9 @@ a{
 /* CSS TOMMY */
 
 #nav-tom {
+
     background-repeat: no-repeat;
+    
 }
 
 #menu-navigation a{
