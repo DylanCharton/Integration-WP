@@ -22,6 +22,5 @@
       </div>
     <?php endif; ?>
     <!-- fin nouvelle widget area -->
-  </body>
 
-</html>
+    
