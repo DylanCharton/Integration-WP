@@ -57,7 +57,7 @@ get_header();
 <?php 
        echo '
         <div class="section3">
-            <div class="d-flex" class="projects-wrapper">
+            <div class="d-flex flex-column flex-md-row" class="projects-wrapper">
                 <div class="img-projects col-12 col-sm-12 col-md-6">
                     <a href="'.get_permalink().'"><img src="'.get_field('img_project')[0]['images_du_projet'].'"/></a>
                 </div>
@@ -135,7 +135,7 @@ get_header();
             <div class="col-md-6">
                 <!-- ajout de ma nouvelle widget area -->
                 <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
-                <div id="header-widget-area-left" class="nwa-header-widget widget-area row" role="complementary">
+                <div id="header-widget-area-left" class="nwa-header-widget widget-area row d-flex flex-column align-items-center" role="complementary">
                     <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
                 </div>
                 <?php endif; ?>
@@ -144,7 +144,7 @@ get_header();
             <div class="col-md-6">
                 <!-- ajout de ma nouvelle widget area -->
                 <?php if ( is_active_sidebar( 'new-widget-area-right' ) ) : ?>
-                <div id="header-widget-area-right" class="nwa-header-widget widget-area row" role="complementary">
+                <div id="header-widget-area-right" class="nwa-header-widget widget-area row d-flex flex-column flex-md-row align-items-center" role="complementary">
                     <?php dynamic_sidebar( 'new-widget-area-right' ); ?>
                 </div>
                 <?php endif; ?>
