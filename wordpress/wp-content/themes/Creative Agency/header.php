@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= the_title() ?></title>
+  <title>ACS - <?= the_title() ?></title>
 </head>
 
 <body>
