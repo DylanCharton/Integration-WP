@@ -80,16 +80,26 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-#scrolldown-btn{
+
+#scrolldown-btn {
     animation: float 2s ease-in-out infinite;
 }
 
 @keyframes float {
-    0% { transform: translate(0, 3px) ;}
-    50% { transform: translate(0, -3px) ;}
-    100% { transform: translate(0, 3px) ;}
-    
+    0% {
+        transform: translate(0, 3px);
+    }
+
+    50% {
+        transform: translate(0, -3px);
+    }
+
+    100% {
+        transform: translate(0, 3px);
+    }
+
 }
+
 /* SECTION 2 */
 
 #letterBlock2 {
@@ -150,44 +160,46 @@ h3 {
     text-align: justify;
 }
 
-@media screen and (max-width:768px){
-    .article{
+@media screen and (max-width:768px) {
+    .article {
         display: flex;
         flex-direction: column;
     }
 
-    li{
+    li {
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    #header-widget a{
+
+    #header-widget a {
         margin: 0 1rem;
         color: white;
         font-size: 10px;
     }
-    
+
 }
 
-@media screen and (max-width:992px){
-    .article{
+@media screen and (max-width:992px) {
+    .article {
         display: flex;
         flex-direction: column;
     }
 
-    li{
+    li {
         height: 60px !important;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    #header-widget a{
+
+    #header-widget a {
         margin: 0 1rem;
         color: white;
         font-size: 10px;
     }
-    
+
 }
 
 /* ARTICLES */
@@ -283,12 +295,13 @@ h3 {
 
 /* PROJECT PAGES */
 
-#single-project{
+#single-project {
     background-color: #d21242;
-    color:#fff
+    color: #fff
 }
-.carousel-item{
-    width : 50rem;
+
+.carousel-item {
+    width: 50rem;
 }
 
 .carousel-item img {
@@ -328,15 +341,17 @@ h3 {
 }
 
 .img-card img {
-   width:100%;
-   object-fit : cover;
+    width: 100%;
+    object-fit: cover;
 }
+
 .img-card {
-    width : 30rem;
+    width: 30rem;
     position: relative;
-    -webkit-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.93); 
-    box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.93);
+    -webkit-box-shadow: 0px 3px 15px -2px rgba(0, 0, 0, 0.93);
+    box-shadow: 0px 3px 15px -2px rgba(0, 0, 0, 0.93);
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -345,23 +360,25 @@ h3 {
     width: 100%;
     opacity: 0;
     transition: .3s ease-in-out;
-    background-color:#d21242;
-    color : #fff;
+    background-color: #d21242;
+    color: #fff;
 }
-.img-card:hover .overlay  {
-    height:100%;
+
+.img-card:hover .overlay {
+    height: 100%;
     opacity: 0.6;
     cursor: pointer;
-    color : #fff;
+    color: #fff;
 }
-#allProjects{
+
+#allProjects {
     background-color: #d21242;
 }
 
 @media screen and (max-width:768px) {
     .section3:nth-child(even) .img-projects {
-        order : 0!important;
-        
+        order: 0 !important;
+
     }
 }
 
@@ -411,13 +428,13 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-.colored-nav-resp{
+.colored-nav-resp {
     background-color: #222222;
     transition: 0.3s ease-in-out;
 }
 
 
-.transition-nav{
+.transition-nav {
     transition: 0.3s;
     width: 100%;
 }
@@ -425,7 +442,7 @@ a {
 /* SECTION 1 */
 
 
-#title-section1{
+#title-section1 {
     font-size: 10vw;
 }
 
@@ -437,7 +454,7 @@ a {
 
 /* CSS TOMMY */
 
-#menu-navigation{
+#menu-navigation {
     margin: auto;
 }
 
@@ -449,7 +466,7 @@ a {
     padding-top: 2rem;
 }
 
-.navbar{
+.navbar {
     position: fixed;
 }
 
@@ -503,6 +520,9 @@ a {
 
 
 /* ERREUR 404 */
+
+
+@media (min-width: 750px) and (max-width: 1200px) { 
 
 
 #luck {
@@ -615,7 +635,7 @@ a {
     font-size: 0.875rem;
     letter-spacing: 0.05rem;
 
-} 
+}
 
 .info {
     text-align: center;
@@ -655,6 +675,18 @@ a {
     }
 }
 
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -682,20 +714,22 @@ a {
 
 /* NOTICE */
 
-#notice-header{
+#notice-header {
     background-size: contain;
 }
-#notice{
+
+#notice {
     background-color: #d21242;
-    color : #fff;
+    color: #fff;
 }
 
-#notice .container p a, #notice .container ul li a{
-    color : #fff;
-    text-decoration: underline ;
+#notice .container p a,
+#notice .container ul li a {
+    color: #fff;
+    text-decoration: underline;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: gray;
 }
 
@@ -712,7 +746,7 @@ ul {
     margin: 0;
 }
 
-li{
+li {
     height: 100px;
     display: flex;
     align-items: center;
@@ -742,14 +776,12 @@ li{
     height: 100%;
 }
 
-#navTop{
+#navTop {
     border-bottom: solid 1px #ffffff61;
     width: 100%;
     z-index: 10;
 }
 
-.current_page_item{
-    border-bottom: 5px solid #d21242 ;
+.current_page_item {
+    border-bottom: 5px solid #d21242;
 }
-
-
