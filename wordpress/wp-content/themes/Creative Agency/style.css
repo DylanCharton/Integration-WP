@@ -6,3 +6,752 @@ Author URI: https://www.accesscodeschool.fr/
 Description: Thème intégré par Tommy, Alaeddin et Dylan
 Version: 1.0
 */
+@font-face {
+    font-family: 'robotoblack';
+    src: url('assets/fonts/roboto-black-webfont.woff2') format('woff2'),
+        url('assets/fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambold';
+    src: url('assets/fonts/gotham-bold-webfont.woff2') format('woff2'),
+        url('assets/fonts/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambold2';
+    src: url('assets/fonts/gothambold-webfont.woff2') format('woff2'),
+        url('assets/fonts/gothambold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('assets/fonts/gothambook-webfont.woff2') format('woff2'),
+        url('assets/fonts/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('assets/fonts/gothammedium-webfont.woff2') format('woff2'),
+        url('assets/fonts/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothamblack';
+    src: url('assets/fonts/gotham-black-webfont.woff2') format('woff2'),
+        url('assets/fonts/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;300&display=swap');
+
+/* GLOBAL */
+
+h1 {
+    font-family: 'gothambold';
+}
+
+h3 {
+    font-family: 'gothammedium';
+    font-size: 1.5rem;
+}
+
+.overflow-hide{
+    overflow:hidden;
+}
+/* SECTION 1 */
+
+#title-section1 {
+    font-size: 10rem;
+}
+
+#hero-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#scrolldown-btn{
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 3px) ;}
+    50% { transform: translate(0, -3px) ;}
+    100% { transform: translate(0, 3px) ;}
+    
+}
+/* SECTION 2 */
+.wrapper{
+    position:relative;
+    height: fit-content;
+}
+.letterBlock2 {
+    
+    color: white;
+    width: 100%;
+    font-size:10rem;
+    font-family:robotoblack;
+    text-align:center;
+    opacity : 0.3;
+}
+.letterBlock4 {
+    
+    color: #d21242;
+    width: 100%;
+    font-size:10rem;
+    font-family:robotoblack;
+    text-align:center;
+    
+}
+
+
+.titleBlock2 {
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom:6rem;
+    font-size: 25px;
+    text-align:center;
+    font-family: 'gothammedium';
+}
+.titleBlock4 {
+    color: #000;
+    width: 100%;
+    position: absolute;
+    bottom:6rem;
+    font-size: 25px;
+    text-align:center;
+    font-family: 'gothammedium';
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.features img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#titleBloc {
+    margin: 3rem 0;
+    font-family: 'gothammedium';
+}
+
+#descriptionBloc {
+    margin-bottom: 50px;
+    font-family: 'gothambook';
+    font-size: 0.9rem;
+}
+
+#section2 {
+    background-color: #d21242;
+    padding: 50px;
+}
+
+#containerBlock {
+    text-align: justify;
+}
+
+@media screen and (max-width:768px){
+    .article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #header-widget a{
+        margin: 0 1rem;
+        color: white;
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:992px){
+    .article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        height: 60px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #header-widget a{
+        margin: 0 1rem;
+        color: white;
+        font-size: 10px;
+    }
+    
+}
+
+/* ARTICLES */
+
+.article img {
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.article p {
+    text-align: center;
+}
+
+.img-article {
+    width: 100%;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 3px 15px -2px rgba(0, 0, 0, 0.93);
+    box-shadow: 0px 3px 15px -2px rgba(0, 0, 0, 0.93);
+}
+
+.titleArticle {
+    color: #d21242;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-family: "gothammedium"
+}
+
+.descriptionArticle {
+    margin-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: 'gothambook'
+}
+
+#letterBlock4 p {
+    color: #d21242;
+    font-size: 15rem;
+    font-weight: 800;
+    width: fit-content;
+    font-family: robotoblack;
+    margin-bottom: -4rem;
+}
+
+#titleBlock4 {
+    color: black;
+    width: max-content;
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'gothammedium';
+}
+
+#letterBlock4 {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#catchsentence {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-family: 'gothammedium';
+    font-size: 1.5rem;
+}
+
+#rowAnnonce {
+    justify-content: center;
+}
+
+#section5 {
+    background-color: #d21242;
+}
+
+#sectionArticle {
+    min-height: calc(100vh - 136px);
+    display: flex;
+    align-items: center;
+    background-color: #d21242;
+    color: #fff;
+}
+
+
+/* PROJECT PAGES */
+
+#single-project{
+    background-color: #d21242;
+    color:#fff
+}
+.carousel-item{
+    width : 50rem;
+}
+
+.carousel-item img {
+    object-fit: contain;
+}
+
+.section3 {
+    height: fit-content;
+}
+
+.img-projects img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.section3:nth-child(even) .img-projects {
+    order: 2;
+
+}
+
+.section3:nth-child(even) .text-projects {
+    background-color: #222222;
+    color: #fff;
+}
+
+.section:nth-child(odd) .text-projects {
+    background-color: #f3f3f3;
+
+}
+
+.description-project {
+    font-family: "gothambook";
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.img-card img {
+   width:100%;
+   object-fit : cover;
+}
+.img-card {
+    width : 30rem;
+    position: relative;
+    -webkit-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.93); 
+    box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.93);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    background-color:#d21242;
+    color : #fff;
+}
+.img-card:hover .overlay  {
+    height:100%;
+    opacity: 0.6;
+    cursor: pointer;
+    color : #fff;
+}
+#allProjects{
+    background-color: #d21242;
+}
+
+@media screen and (max-width:768px) {
+    .section3:nth-child(even) .img-projects {
+        order : 0!important;
+        
+    }
+}
+
+/* CSS NAV */
+
+a {
+    color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.nwa-title {
+    margin-bottom: 1em;
+    text-transform: capitalize;
+}
+
+.nwa-header-widget {
+    padding: 2em;
+    flex-wrap: nowrap;
+    color: #fff;
+    display: flex;
+}
+
+.nwa-header-widget img {
+    height: 30px;
+    width: 30px;
+}
+
+.nwa-widget {
+    width: fit-content;
+}
+
+#footer {
+    background-color: #222222;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.colored-nav {
+    background-color: #222222;
+    transition: 0.3s ease-in-out;
+}
+
+.colored-nav-resp{
+    background-color: #222222;
+    transition: 0.3s ease-in-out;
+}
+
+
+.transition-nav{
+    transition: 0.3s;
+    width: 100%;
+}
+
+/* SECTION 1 */
+
+
+#title-section1{
+    font-size: 10vw;
+}
+
+#hero-section {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CSS TOMMY */
+
+#menu-navigation{
+    margin: auto;
+}
+
+#menu-navigation a {
+    color: white;
+}
+
+.nav-tom {
+    padding-top: 2rem;
+}
+
+.navbar{
+    position: fixed;
+}
+
+.nav-item {
+    margin-right: 1.5rem;
+    size: 2rem;
+}
+
+#footer-widget {
+    color: white;
+}
+
+.footerWidgetBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textwidget {
+    color: white;
+}
+
+/* CONTACT */
+
+#contact-form-section {
+    background-color: #d21242;
+    color: #fff;
+}
+
+#contact-form-section form {
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+    color: #d21242;
+    border: #fff 1px solid;
+    transition: 0.3s;
+}
+
+.btn-secondary {
+    background-color: #d21242;
+    color: #fff;
+    border: #fff 1px solid;
+    transition: 0.3s;
+
+}
+
+
+
+
+
+
+/* ERREUR 404 */
+
+
+#luck {
+
+    text-align: -webkit-center;
+    height: 100vh;
+}
+
+:root {
+    --button: #b3b3b3;
+    --button-color: #0a0a0a;
+    --shadow: #000;
+    --bg: #737373;
+    --header: #7a7a7a;
+    --color: #fafafa;
+    --lit-header: #e6e6e6;
+    --speed: 2s;
+}
+
+.containerErr {
+
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg);
+    color: var(--color);
+    perspective: 1200px;
+}
+
+.err {
+
+    -webkit-animation: swing var(--speed) infinite alternate ease-in-out;
+    animation: swing var(--speed) infinite alternate ease-in-out;
+    margin: 0;
+    margin-bottom: 1rem;
+    letter-spacing: 1rem;
+    transform: translate3d(0, 0, 0vmin);
+    --x: calc(50% + (var(--swing-x) * 0.5) * 1%);
+    background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 16rem;
+}
+
+.err::after {
+
+    -webkit-animation: swing var(--speed) infinite alternate ease-in-out;
+    animation: swing var(--speed) infinite alternate ease-in-out;
+    content: "404";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--shadow);
+    filter: blur(1.5vmin);
+    transform: scale(1.05) translate3d(0, 12%, -10vmin) translate(calc((var(--swing-x, 0) * 0.05) * 1%), calc((var(--swing-y) * 0.05) * 1%));
+
+}
+
+
+@property --swing-x {
+    initial-value: 0;
+    inherits: false;
+    syntax: '<integer>';
+}
+
+@property --swing-y {
+    initial-value: 0;
+    inherits: false;
+    syntax: '<integer>';
+}
+
+.cloak {
+    animation: swing var(--speed) infinite alternate-reverse ease-in-out;
+    height: 100%;
+    width: 100%;
+    transform-origin: 50% 30%;
+    transform: rotate(calc(var(--swing-x) * -0.25deg));
+    background: radial-gradient(40% 40% at 50% 42%, transparent, #000 35%);
+}
+
+.cloak__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.cloak__container {
+    height: 250vmax;
+    width: 250vmax;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.street>a {
+
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--button);
+    color: var(--button-color);
+    padding: 1rem 4rem;
+    border-radius: 4rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.05rem;
+
+} 
+
+.info {
+    text-align: center;
+    line-height: 1.5;
+    max-width: clamp(16rem, 90vmin, 25rem);
+}
+
+.info>p {
+    margin-bottom: 3rem;
+}
+
+@-webkit-keyframes swing {
+    0% {
+        --swing-x: -100;
+        --swing-y: -100;
+    }
+
+    50% {
+        --swing-y: 0;
+    }
+
+    100% {
+        --swing-y: -100;
+        --swing-x: 100;
+    }
+}
+
+@keyframes swing {
+    0% {
+        --swing-x: -100;
+        --swing-y: -100;
+    }
+
+    50% {
+        --swing-y: 0;
+    }
+
+    100% {
+        --swing-y: -100;
+        --swing-x: 100;
+    }
+}
+
+/* Footer */
+
+.footerWidgetBlock a {
+    color: white;
+}
+
+/* NOTICE */
+
+#notice-header{
+    background-size: contain;
+}
+#notice{
+    background-color: #d21242;
+    color : #fff;
+}
+
+#notice .container p a, #notice .container ul li a{
+    color : #fff;
+    text-decoration: underline ;
+}
+
+.navbar-toggler{
+    background-color: gray;
+}
+
+
+
+
+#header-widget ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+}
+
+li{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#header-widget {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 2rem;
+    z-index: 10;
+    color: rgba(255, 255, 255, 0);
+    border-bottom: solid 1px #ffffff61;
+}
+
+#header-widget a {
+    margin: 0 1rem;
+    color: white;
+}
+
+#header-widget img {
+    margin: 1rem 0;
+}
+
+#header-widget nav {
+    height: 100%;
+}
+
+#navTop{
+    border-bottom: solid 1px #ffffff61;
+    width: 100vw;
+    z-index: 10;
+}
+
+.current_page_item{
+    border-bottom: 5px solid #d21242 ;
+}
+
+
