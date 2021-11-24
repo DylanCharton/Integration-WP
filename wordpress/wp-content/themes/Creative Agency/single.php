@@ -20,17 +20,17 @@
             'p'=> get_the_ID(),
         )); 
     ?>
-    <div class="container d-flex">
+    <div class="container d-flex ">
         
             <?php
             if($the_query->have_posts()){
                 while($the_query->have_posts()){
                     $the_query->the_post();
-                    echo '<div class="col-12 d-flex">
+                    echo '<div class="align-items-center col-12 d-flex flex-column flex-md-row">
                             <div class="col-12 col-md-6">
                                 <img class="img-article" src="'.get_field('img_article').'"/>
                             </div>
-                            <div class="col-12 col-md-6 ms-5">
+                            <div class="col-12 col-md-6 px-5 py-3">
                                 <p>'.get_the_content().'</p>
                             </div>';
                     

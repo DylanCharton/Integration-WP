@@ -15,31 +15,23 @@
 
 <body>
   <!-- NAV BAR -->
-
-  <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top transparent-nav" id="navTop"><img class="site-img" src="<?= get_site_icon_url()?>" >
-    <div class="container-fluid d-flex container-tom">  
-
-    
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:white">
-
-        <?php wp_nav_menu([
-
-      'theme_location' => 'header',
-      'container' => false,
-      'menu_class' => 'navbar-nav me-auto'
-
-    ]) 
-    ?>
-      </div>
+  <nav id="navTop" class="navbar navbar-expand-lg transition-nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="<?=get_home_url()?>">
+    <img class="site-img" src="<?=get_site_icon_url()?>">
+    </a>
+    <button id="btNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <?php wp_nav_menu([
+            'theme_location' => 'header',
+            'container' => false,
+            'menu_class' => 'navbar-nav me-auto mb-2 mb-lg-0'
+            ]) 
+      ?>
     </div>
-  </nav>
+  </div>
+</nav>
 
- 
 
-</body>
-
-</html>

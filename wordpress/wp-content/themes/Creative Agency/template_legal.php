@@ -1,5 +1,6 @@
 <?php
 /* Template name: Mentions légales */ 
+<<<<<<< HEAD
 get_header()
 ?>
 <header class="d-flex align-items-center justify-content-center flex-column" id="notice-header" style="background-image:url(<?= the_field('bg_hero_common');?> ); height:100vh;">
@@ -17,3 +18,6 @@ get_header()
 <?php 
 get_footer()
 ?>
+=======
+?>
+>>>>>>> c44aff3a70995eac192f4e11e851cf7d4ddccc3d
