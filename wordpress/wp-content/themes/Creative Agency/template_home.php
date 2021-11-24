@@ -14,7 +14,7 @@ get_header();
     <div class="d-flex flex-column justify-content-center ">
         <p class="text-white"><?= the_field('scroll_text'); ?></p>
         <div class="d-flex justify-content-center">
-            <a href="#section2"><img src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
+            <a href="#section2"><img id="scrolldown-btn" src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
                     alt="Scrolldown button"></a>
         </div>
     </div>
@@ -135,7 +135,7 @@ get_header();
             <div class="col-md-6">
                 <!-- ajout de ma nouvelle widget area -->
                 <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
-                <div id="header-widget-area-left" class="nwa-header-widget widget-area row d-flex flex-column align-items-center" role="complementary">
+                <div id="header-widget-area-left" class="nwa-header-widget widget-area row d-flex flex-column flex-md-row align-items-center" role="complementary">
                     <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
                 </div>
                 <?php endif; ?>

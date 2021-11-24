@@ -75,7 +75,16 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
 }
+#scrolldown-btn{
+    animation: float 2s ease-in-out infinite;
+}
 
+@keyframes float {
+    0% { transform: translate(0, 3px) ;}
+    50% { transform: translate(0, -3px) ;}
+    100% { transform: translate(0, 3px) ;}
+    
+}
 /* SECTION 2 */
 
 #letterBlock2 {
@@ -451,4 +460,19 @@ a{
 /* Footer */
 .footerWidgetBlock a{
     color: white;
+}
+
+/* NOTICE */
+
+#notice-header{
+    background-size: contain;
+}
+#notice{
+    background-color: #d21242;
+    color : #fff;
+}
+
+#notice .container p a, #notice .container ul li a{
+    color : #fff;
+    text-decoration: underline ;
 }
