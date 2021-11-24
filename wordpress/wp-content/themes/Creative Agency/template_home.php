@@ -18,23 +18,24 @@ get_header();
     <div class="d-flex flex-column justify-content-center ">
         <p class="text-white"><?= the_field('scroll_text'); ?></p>
         <div class="d-flex justify-content-center">
-            <a href="#section2"><img id="scrolldown-btn" src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
-                    alt="Scrolldown button"></a>
+            <a href="#section2"><img id="scrolldown-btn"
+                    src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png" alt="Scrolldown button"></a>
         </div>
     </div>
 </section>
 
 <!--------------------------------------  FEATURES SECTION  ------------------------------------------->
-
+<section id="section2">
     <div class="container">
-        <div class="row">
-            <div id="letterBlock2">
-                <div id="titleBlock2">
-                    <?= get_field('title_section2');?>
-                </div>
-                <p><?= get_field('letter_section2')?></p>
+        <div class="wrapper">
+            <div class="letterBlock2">
+                <?= get_field('letter_section2') ?>
+            </div>
+            <div class="titleBlock2">
+                <?= get_field('title_section2') ?>
             </div>
         </div>
+
     </div>
     <div id="containerBlock" class="container">
         <div class="row">
@@ -91,29 +92,23 @@ get_header();
     ?>
 
     <div class="container">
-        <div class="row">
-            <div id="letterBlock4">
-                <div id="titleBlock4">
-                    <?= get_field('title_section3');?>
-                </div>
-                <p><?= get_field('letter_section3')?></p>
+        <div class="wrapper">
+            <div class="letterBlock4">
+                <?= get_field('letter_section3') ?>
             </div>
-            <div id="catchsentence">
-                <p><?= get_field('catchphrase')?></p>
+            <div class="titleBlock4">
+                <?= get_field('title_section3') ?>
             </div>
-<<<<<<< HEAD
-            <p><?= get_field('letter_section3')?></p>
+            
         </div>
-        <div id="catchsentence" class="text-center">
+        <div id="catchsentence">
             <p><?= get_field('catchphrase')?></p>
-=======
->>>>>>> 6a2c41f35702a7bbdf44e0130c9755fbc31d3e1f
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <?php
+        <div class="container">
+            <div class="row">
+                <?php
         if($the_query->have_posts()){
             while($the_query->have_posts()){
                 $the_query->the_post();
@@ -131,8 +126,8 @@ get_header();
                 echo '</div>';
         }   }
         ?>
+            </div>
         </div>
-    </div>
 </section>
 
 <section id="section5">
@@ -141,7 +136,9 @@ get_header();
             <div class="col-md-6">
                 <!-- ajout de ma nouvelle widget area -->
                 <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
-                <div id="header-widget-area-left" class="nwa-header-widget widget-area row d-flex flex-column flex-md-row align-items-center" role="complementary">
+                <div id="header-widget-area-left"
+                    class="nwa-header-widget widget-area row d-flex flex-column flex-md-row align-items-center"
+                    role="complementary">
                     <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
                 </div>
                 <?php endif; ?>
@@ -150,82 +147,9 @@ get_header();
             <div class="col-md-6">
                 <!-- ajout de ma nouvelle widget area -->
                 <?php if ( is_active_sidebar( 'new-widget-area-right' ) ) : ?>
-                <div id="header-widget-area-right" class="nwa-header-widget widget-area row d-flex flex-column flex-md-row align-items-center" role="complementary">
-                    <?php dynamic_sidebar( 'new-widget-area-right' ); ?>
-                </div>
-                <?php endif; ?>
-                <!-- fin nouvelle widget area -->
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="section4">
-    <?php
-// the query
-$the_query = new WP_Query( array(
-'category_name' => '',
-'posts_per_page' => 4,
-));
-?>
-
-    <div class="container">
-        <div class="row">
-            <div id="letterBlock4">
-                <div id="titleBlock4">
-                    <?= get_field('title_section2');?>
-                </div>
-                <p><?= get_field('letter_section2')?></p>
-            </div>
-            <div id="catchsentence">
-                <p><?= get_field('catchphrase')?></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <?php
-if($the_query->have_posts()){
-while($the_query->have_posts()){
-$the_query->the_post();
-// echo wp_count_posts();
-$link = get_the_permalink();
-echo '<div class="article col-md-3">';
-echo '<img src="'.get_field('img_article').'"/>';
-echo '<a href='.$link.' target="_blank">';
-echo '<div class="titleArticle">'.get_the_title().'</div>';
-echo '</a>';
-echo '<div class="descriptionArticle">'.get_field('description_article').'</div>';
-// echo get_the_ID();
-echo '</div>';
-}
-wp_reset_postdata();
-}else{
-__('No News');
-}
-?>
-        </div>
-    </div>
-</section>
-
-
-<section id="section5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- ajout de ma nouvelle widget area -->
-                <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
-                <div id="header-widget-area-left" class="nwa-header-widget widget-area row" role="complementary">
-                    <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
-                </div>
-                <?php endif; ?>
-                <!-- fin nouvelle widget area -->
-            </div>
-            <div class="col-md-6">
-                <!-- ajout de ma nouvelle widget area -->
-                <?php if ( is_active_sidebar( 'new-widget-area-right' ) ) : ?>
-                <div id="header-widget-area-right" class="nwa-header-widget widget-area row" role="complementary">
+                <div id="header-widget-area-right"
+                    class="nwa-header-widget widget-area row d-flex flex-column flex-md-row align-items-center"
+                    role="complementary">
                     <?php dynamic_sidebar( 'new-widget-area-right' ); ?>
                 </div>
                 <?php endif; ?>

@@ -8,10 +8,10 @@ window.onscroll = function (){
 }
 
 let divColor = document.getElementById("navTop");
-let btNav = document.querySelector("#")
+
 btNav.addEventListener("click", function() {
     divColor.classList.add("colored-nav");
-    document.body.style.overflow = "hidden";
+    document.body.classList.toggle("overflow-hide");
 });
 
 
