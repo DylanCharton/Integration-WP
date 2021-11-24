@@ -6,7 +6,7 @@ get_header()
 
 
 
-<section id="luck">
+<section id="sectionErr">
 
     <div class="containerErr">
 
