@@ -434,19 +434,27 @@ height: 100%;
     border-bottom: 5px solid #d21242 ;
 }
 
-/* ::-webkit-scrollbar-thumb{
-    background: #d21242;
-    border-radius: 5px;
+
+#contenantLettre{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-::-webkit-scrollbar-corner{
-    background: #d21242;
-} */
+#lettreBlock4New p {
+    color: #d21242;
+    font-size: 15rem;
+    font-weight: 800;
+    width: fit-content;
+    font-family: robotoblack;
+    margin: 0;
+    text-align: center;
+}
 
-
-/* #header-widget li:first-child:hover > a{border-bottom: 3px solid red;}
-#header-widget li:nth-child(2):hover > a{border-bottom: 3px solid blue;}
-#header-widget li:nth-child(3):hover > a{border-bottom: 3px solid green;}
-#header-widget li:nth-child(4):hover > a{border-bottom: 3px solid gray;}
-#header-widget li:nth-child(5):hover > a{border-bottom: 3px solid white;}
-#header-widget li:last-child:hover > a{border-bottom: 3px solid lime;} */
+#textBlock4New{
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+}
