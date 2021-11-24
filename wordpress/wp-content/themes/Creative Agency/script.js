@@ -8,3 +8,4 @@ window.onscroll = function (){
         nav.classList.remove("colored-nav");
     }
 }
+

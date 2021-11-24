@@ -1,7 +1,11 @@
 <?php
+
 /* Template name: Homepage */
+
 get_header();
+
 ?>
+
 <!--------------------------------------  HERO SECTION  ------------------------------------------->
 
 
@@ -19,8 +23,9 @@ get_header();
         </div>
     </div>
 </section>
+
 <!--------------------------------------  FEATURES SECTION  ------------------------------------------->
-<section id="section2">
+
     <div class="container">
         <div class="row">
             <div id="letterBlock2">
@@ -48,9 +53,7 @@ get_header();
     </div>
 </section>
 
-
 <!--------------------------------------  PROJECTS SECTION  ------------------------------------------->
-
 
 <?php $loop = new WP_Query( array( 'post_type' => 'projets', 'posts_per_page' => '2' ) ); ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
