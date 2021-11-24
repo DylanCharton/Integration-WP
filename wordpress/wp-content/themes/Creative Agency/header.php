@@ -13,15 +13,25 @@
   <title>ACS - <?= the_title() ?></title>
 </head>
 
-  <body>
-    <!-- NAV BAR -->
-    <!-- ajout de ma nouvelle widget area -->
-    <?php if ( is_active_sidebar( 'hstngr_widget_header' ) ) : ?>
-      <div id="header-widget" class="row transparent-nav nav_menu_css_class" role="complementary">
-          <?php dynamic_sidebar( 'hstngr_widget_header' );?>
+<body>
+  <!-- NAV BAR -->
+  <nav id="navTop" class="navbar navbar-expand-lg transition-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="<?=get_home_url()?>">
+        <img class="site-img" src="<?=get_site_icon_url()?>">
+      </a>
+      <button id="btNav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <?php wp_nav_menu([
+'theme_location' => 'header',
+'container' => false,
+'menu_class' => 'navbar-nav me-auto mb-2 mb-lg-0'
+])
+?>
       </div>
-    <?php endif; ?>
-    <!-- fin nouvelle widget area -->
-  </body>
-
-</html>
+    </div>
+  </nav>

@@ -18,7 +18,7 @@ get_header();
     <div class="d-flex flex-column justify-content-center ">
         <p class="text-white"><?= the_field('scroll_text'); ?></p>
         <div class="d-flex justify-content-center">
-            <a href="#section2"><img src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
+            <a href="#section2"><img id="scrolldown-btn" src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
                     alt="Scrolldown button"></a>
         </div>
     </div>
@@ -60,11 +60,11 @@ get_header();
 <?php 
        echo '
         <div class="section3">
-            <div class="d-flex" class="projects-wrapper">
+            <div class="d-flex flex-column flex-md-row" class="projects-wrapper">
                 <div class="img-projects col-12 col-sm-12 col-md-6">
                     <a href="'.get_permalink().'"><img src="'.get_field('img_project')[0]['images_du_projet'].'"/></a>
                 </div>
-                <div class="text-projects col-sm-12 col-md-6 d-flex flex-column justify-content-center ps-5">
+                <div class="text-projects pt-4 pt-md-0 col-sm-12 col-md-6 d-flex flex-column justify-content-center ps-0 ps-md-5 align-items-center">
                     <div class="mb-5">
                         <h3>'.get_field('title_project').'</h3>
                     </div>
@@ -134,7 +134,7 @@ get_header();
             <div class="col-md-6">
                 <!-- ajout de ma nouvelle widget area -->
                 <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
-                <div id="header-widget-area-left" class="nwa-header-widget widget-area row" role="complementary">
+                <div id="header-widget-area-left" class="nwa-header-widget widget-area row d-flex flex-column flex-md-row align-items-center" role="complementary">
                     <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
                 </div>
                 <?php endif; ?>
@@ -143,7 +143,7 @@ get_header();
             <div class="col-md-6">
                 <!-- ajout de ma nouvelle widget area -->
                 <?php if ( is_active_sidebar( 'new-widget-area-right' ) ) : ?>
-                <div id="header-widget-area-right" class="nwa-header-widget widget-area row" role="complementary">
+                <div id="header-widget-area-right" class="nwa-header-widget widget-area row d-flex flex-column flex-md-row align-items-center" role="complementary">
                     <?php dynamic_sidebar( 'new-widget-area-right' ); ?>
                 </div>
                 <?php endif; ?>

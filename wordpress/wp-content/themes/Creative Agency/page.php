@@ -12,6 +12,14 @@ get_header();
     </div>    
 </section>
 
+<section>
+    <div class="container-fluid" id="single-project">
+        <div class="container py-5">
+            <?= get_the_content() ?>
+        </div>
+    </div>
+</section>
+
 <?php
 get_footer();
 

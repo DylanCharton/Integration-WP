@@ -6,11 +6,6 @@ get_header()
 
 
 
-
-
-
-
-
 <section id="luck">
 
     <div class="containerErr">
@@ -37,10 +32,6 @@ get_header()
         </div>
 
     </section>
-
-
-
-
 
 <?php
 get_footer()
