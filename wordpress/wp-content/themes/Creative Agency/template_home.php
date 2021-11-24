@@ -25,7 +25,7 @@ get_header();
 </section>
 
 <!--------------------------------------  FEATURES SECTION  ------------------------------------------->
-
+    <section id="section2">
     <div class="container">
         <div class="row">
             <div id="letterBlock2">

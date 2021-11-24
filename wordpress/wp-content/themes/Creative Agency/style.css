@@ -508,7 +508,7 @@ a {
 #luck {
 
     text-align: -webkit-center;
-    height: 100vh;
+    height: 85vh;
 }
 
 :root {
@@ -524,7 +524,7 @@ a {
 
 .containerErr {
 
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
@@ -532,6 +532,7 @@ a {
     background: var(--bg);
     color: var(--color);
     perspective: 1200px;
+    padding-top: 15rem;
 }
 
 .err {
@@ -582,6 +583,7 @@ a {
     transform-origin: 50% 30%;
     transform: rotate(calc(var(--swing-x) * -0.25deg));
     background: radial-gradient(40% 40% at 50% 42%, transparent, #000 35%);
+    margin-top: 14rem;
 }
 
 .cloak__wrapper {
