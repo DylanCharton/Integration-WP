@@ -9,40 +9,36 @@ get_header()
 
 
 
-<body id="look">
 
-    <section id="luck">
 
-        <div class="containerErr">
+<section id="luck">
 
-            <h1 class="err">404<h1>
+    <div class="containerErr">
 
-                    <div class="cloak__wrapper">
+        <h1 class="err">404<h1>
 
-                        <div class="cloak__container">
+            <div class="cloak__wrapper">
+
+                    <div class="cloak__container">
 
                             <div class="cloak"></div>
 
-                        </div>
-
                     </div>
 
-                    <div class="info">
+                </div>
 
-                        <h2>Nous ne pouvons pas trouver cette page</h2>
+            <div class="info">
 
-                        <a class="btn btn-primary street" href="https://localhost" target="" rel="">Home</a>
+                <h2>Nous ne pouvons pas trouver cette page..</h2>
 
-                    </div>
 
-         
-
+            </div>
 
         </div>
 
     </section>
 
-</body>
+
 
 
 
