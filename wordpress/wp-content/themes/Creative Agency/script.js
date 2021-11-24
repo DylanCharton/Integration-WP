@@ -1,4 +1,4 @@
-let nav = document.querySelector('#header-widget');
+let nav = document.querySelector('#navTop');
 window.onscroll = function (){
     if(document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50){
         nav.classList.add("colored-nav");
@@ -9,39 +9,18 @@ window.onscroll = function (){
     }
 }
 
+let navLi = document.querySelectorAll("nav#navTop > li");
+for( i =0; i< navLi.length ; i++ ){
+    navLi[i].classList.add("nav-item");
+}
 
-// let headerNav = document.querySelector('#header-widget > div >  nav');
-// headerNav.classList.add("navbar","navbar-expand-lg");
+let navA = document.querySelectorAll("nav#navTop > li > a");
+for( i =0; i< navLi.length ; i++ ){
+    navA[i].classList.add("nav-link");
+}
 
-// let btnMenu = document.createElement('button');
-// btnMenu.classList.add("navbar-toggler");
-// btnMenu.setAttribute("type","button");
-// btnMenu.setAttribute("data-bs-toggle","collapse");
-// btnMenu.setAttribute("data-bs-target","#navbarNavAltMarkup");
-// btnMenu.setAttribute("aria-controls","navbarNavAltMarkup");
-// btnMenu.setAttribute("aria-expanded","false");
-// btnMenu.setAttribute("aria-label","#Toggle navigation");
+let btNav = document.getElementById("btNav");
 
-// let spanBtn = document.createElement('span');
-// spanBtn.classList.add("navbar-toggler-icon");
-
-// let divContainer = document.createElement('div');
-// divContainer.classList.add("collapse", "navbar-collapse")
-// divContainer.setAttribute("id","navbarNav");
-
-// let navUl = document.querySelector('#header-widget > div >  nav > ul');
-// navUl.classList.add("navbar-nav");
-
-// let navLi = document.querySelector('#header-widget > div >  nav > ul > li');
-// navLi.classList.add("nav-item");
-
-// let navA = document.querySelector('#header-widget > div >  nav > ul > li > a');
-// navA.classList.add("nav-link","active");
-
-
-// navLi.appendChild(navA);
-// navUl.appendChild(navLi);
-// btnMenu.appendChild(spanBtn);
-// divContainer.appendChild(navUl);
-// headerNav.appendChild(divContainer);
-// headerNav.appendChild(btnMenu);
+btNav.addEventListener("click", function() {
+    document.getElementById("navTop").style.backgroundColor = "#222222";
+  });

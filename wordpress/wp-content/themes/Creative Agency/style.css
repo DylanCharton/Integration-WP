@@ -81,10 +81,10 @@ Version: 1.0
 }
 
 @media screen and (max-width:768px){
-.article{
-    display: flex;
-    flex-direction: column;
-}
+    .article{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* ARTICLES */
@@ -254,6 +254,8 @@ a{
 .transparent-nav{
     background-color: #22222200;
     transition: 0.3s;
+    width: 100%;
+    z-index: 10;
 }
 
 /* SECTION 1 */
@@ -271,10 +273,8 @@ a{
 
 /* CSS TOMMY */
 
-#nav-tom {
-
-    background-repeat: no-repeat;
-    
+#menu-navigation{
+    margin: auto;
 }
 
 #menu-navigation a{
@@ -283,7 +283,10 @@ a{
 
 .nav-tom {
     padding-top: 2rem;
-  
+}
+
+.navbar{
+    position: fixed;
 }
 
 .nav-item {
@@ -334,13 +337,14 @@ a{
     color: white;
 }
 
-.menu-item{
+/* .menu-item{
     border-bottom: 3px solid #d21242;
-}
+} */
 
-#navbarSupportedContent{
-    display: flex;
-    justify-content: center;
+
+
+.navbar-toggler{
+    background-color: gray;
 }
 
 #header-widget ul{
@@ -380,6 +384,12 @@ li{
 
 #header-widget nav{
 height: 100%;
+}
+
+#navTop{
+    border-bottom: solid 1px #ffffff61;
+    width: 100%;
+    z-index: 10;
 }
 
 .current_page_item{

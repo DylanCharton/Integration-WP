@@ -13,14 +13,41 @@
   <title>ACS - <?= the_title() ?></title>
 </head>
 
-  <body>
-    <!-- NAV BAR -->
-    <!-- ajout de ma nouvelle widget area -->
-    <?php if ( is_active_sidebar( 'hstngr_widget_header' ) ) : ?>
-      <div id="header-widget" class="row transparent-nav nav_menu_css_class" role="complementary">
-          <?php dynamic_sidebar( 'hstngr_widget_header' );?>
-      </div>
-    <?php endif; ?>
-    <!-- fin nouvelle widget area -->
+<body>
+  <!-- NAV BAR -->
 
-    
+  <!-- <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top transparent-nav" id="navTop">
+    <div class="container-fluid d-flex">  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="imgNav"></div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+      </div>
+    </div>
+  </nav> -->
+
+
+
+  <nav id="navTop" class="navbar navbar-expand-lg transparent-nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="<?=get_home_url()?>">
+    <img class="site-img" src="<?=get_site_icon_url()?>">
+    </a>
+    <button id="btNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <?php wp_nav_menu([
+            'theme_location' => 'header',
+            'container' => false,
+            'menu_class' => 'navbar-nav me-auto mb-2 mb-lg-0'
+            ]) 
+      ?>
+    </div>
+  </div>
+</nav>
+
+
