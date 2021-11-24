@@ -15,29 +15,13 @@
 
 <body>
   <!-- NAV BAR -->
-
-  <!-- <nav class="nav-tom navbar navbar-expand-lg navbar-light fixed-top transparent-nav" id="navTop">
-    <div class="container-fluid d-flex">  
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="imgNav"></div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-      </div>
-    </div>
-  </nav> -->
-
-
-
-  <nav id="navTop" class="navbar navbar-expand-lg transparent-nav">
+  <nav id="navTop" class="navbar navbar-expand-lg transition-nav">
   <div class="container-fluid">
     <a class="navbar-brand" href="<?=get_home_url()?>">
     <img class="site-img" src="<?=get_site_icon_url()?>">
     </a>
     <button id="btNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <?php wp_nav_menu([
