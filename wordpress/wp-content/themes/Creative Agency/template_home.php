@@ -1,7 +1,11 @@
-<?php 
+<?php
+
 /* Template name: Homepage */
+
 get_header();
+
 ?>
+
 <!--------------------------------------  HERO SECTION  ------------------------------------------->
 
 
@@ -19,8 +23,9 @@ get_header();
         </div>
     </div>
 </section>
+
 <!--------------------------------------  FEATURES SECTION  ------------------------------------------->
-<section id="section2">
+
     <div class="container">
         <div class="row">
             <div id="letterBlock2">
@@ -48,9 +53,7 @@ get_header();
     </div>
 </section>
 
-
 <!--------------------------------------  PROJECTS SECTION  ------------------------------------------->
-
 
 <?php $loop = new WP_Query( array( 'post_type' => 'projets', 'posts_per_page' => '2' ) ); ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -78,7 +81,7 @@ get_header();
 
 
 
-<section id="section4" class="pb-4">         
+<section id="section4" class="pb-4">
     <?php 
         // the query
         $the_query = new WP_Query( array(
@@ -87,23 +90,30 @@ get_header();
         )); 
     ?>
 
-<div class="container">
-    <div class="row">
-        <div id="letterBlock4">
-            <div id="titleBlock4">
-                <?= get_field('title_section3');?>
+    <div class="container">
+        <div class="row">
+            <div id="letterBlock4">
+                <div id="titleBlock4">
+                    <?= get_field('title_section3');?>
+                </div>
+                <p><?= get_field('letter_section3')?></p>
             </div>
+            <div id="catchsentence">
+                <p><?= get_field('catchphrase')?></p>
+            </div>
+<<<<<<< HEAD
             <p><?= get_field('letter_section3')?></p>
         </div>
         <div id="catchsentence" class="text-center">
             <p><?= get_field('catchphrase')?></p>
+=======
+>>>>>>> 6a2c41f35702a7bbdf44e0130c9755fbc31d3e1f
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <?php
+    <div class="container">
+        <div class="row">
+            <?php
         if($the_query->have_posts()){
             while($the_query->have_posts()){
                 $the_query->the_post();
@@ -119,14 +129,10 @@ get_header();
                     echo '<div class="descriptionArticle">'.get_field('description_article').'</div>';
                 // echo get_the_ID();
                 echo '</div>';
-            }
-            wp_reset_postdata(); 
-        }else{
-            __('No News');
-        }
+        }   }
         ?>
+        </div>
     </div>
-</div>   
 </section>
 
 <section id="section5">
@@ -154,6 +160,81 @@ get_header();
     </div>
 </section>
 
-<?php 
+<section id="section4">
+    <?php
+// the query
+$the_query = new WP_Query( array(
+'category_name' => '',
+'posts_per_page' => 4,
+));
+?>
+
+    <div class="container">
+        <div class="row">
+            <div id="letterBlock4">
+                <div id="titleBlock4">
+                    <?= get_field('title_section2');?>
+                </div>
+                <p><?= get_field('letter_section2')?></p>
+            </div>
+            <div id="catchsentence">
+                <p><?= get_field('catchphrase')?></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <?php
+if($the_query->have_posts()){
+while($the_query->have_posts()){
+$the_query->the_post();
+// echo wp_count_posts();
+$link = get_the_permalink();
+echo '<div class="article col-md-3">';
+echo '<img src="'.get_field('img_article').'"/>';
+echo '<a href='.$link.' target="_blank">';
+echo '<div class="titleArticle">'.get_the_title().'</div>';
+echo '</a>';
+echo '<div class="descriptionArticle">'.get_field('description_article').'</div>';
+// echo get_the_ID();
+echo '</div>';
+}
+wp_reset_postdata();
+}else{
+__('No News');
+}
+?>
+        </div>
+    </div>
+</section>
+
+
+<section id="section5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- ajout de ma nouvelle widget area -->
+                <?php if ( is_active_sidebar( 'new-widget-area-left' ) ) : ?>
+                <div id="header-widget-area-left" class="nwa-header-widget widget-area row" role="complementary">
+                    <?php dynamic_sidebar( 'new-widget-area-left' ); ?>
+                </div>
+                <?php endif; ?>
+                <!-- fin nouvelle widget area -->
+            </div>
+            <div class="col-md-6">
+                <!-- ajout de ma nouvelle widget area -->
+                <?php if ( is_active_sidebar( 'new-widget-area-right' ) ) : ?>
+                <div id="header-widget-area-right" class="nwa-header-widget widget-area row" role="complementary">
+                    <?php dynamic_sidebar( 'new-widget-area-right' ); ?>
+                </div>
+                <?php endif; ?>
+                <!-- fin nouvelle widget area -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php
 get_footer();
 ?>
