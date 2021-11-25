@@ -67,10 +67,10 @@ get_header();
                 </div>
                 <div class="text-projects pt-4 pt-md-0 col-sm-12 col-md-6 d-flex flex-column justify-content-center ps-0 ps-md-5 align-items-center">
                     <div class="mb-5">
-                        <h3>'.get_field('title_project').'</h3>
+                        <h3>'.get_the_title().'</h3>
                     </div>
                     <div class="w-75 description-project">
-                        <p>'.get_field('description_project').'</p>
+                        <p>'.get_the_excerpt().'</p>
                     </div>
 
                 </div>

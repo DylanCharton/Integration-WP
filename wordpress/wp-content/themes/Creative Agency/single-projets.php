@@ -17,8 +17,8 @@ get_header();
         <div class="container py-3 d-flex flex-column align-items-center">
             <div class="mt-5 mb-5">
                 <h3><?php the_title() ?></h3>
-                <?php 
-            the_field('description_project');
+                <?= 
+            get_the_content();
             ?>
             </div>
             <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
