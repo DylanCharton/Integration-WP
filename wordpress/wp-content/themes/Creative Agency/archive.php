@@ -12,7 +12,7 @@ get_header()
     <div class="d-flex flex-column justify-content-center ">
         <p class="text-white"><?= the_field('scroll_text'); ?></p>
         <div class="d-flex justify-content-center">
-            <a href="#allProjects"><img src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
+            <a href="#allProjects"><img id="scrolldown-btn" src="<?= get_template_directory_uri(); ?>/assets/img/scrolldown.png"
                     alt="Scrolldown button"></a>
         </div>
     </div>
@@ -21,7 +21,7 @@ get_header()
 
 <section class="container-fluid" id="allProjects">
     <h3 class="text-center text-white py-4">Découvrez nos <?= get_field('archives_section1')?></h3>
-    <div class="container d-flex flex-column flex-md-row justify-content-center py-4">
+    <div class="container-fluid w-100 flex-wrap d-flex flex-column flex-md-row justify-content-center py-4">
         
         <?php $loop = new WP_Query( array( 'post_type' => 'projets', 'posts_per_page' => '1000' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -51,7 +51,7 @@ get_header()
 <!-- LOOP FOR THE ARTICLES -->
 <section class="container-fluid" >
     <h3 class="text-center py-4">Découvrez nos <?= get_field('archives_section2')?></h3>
-    <div class="container d-flex flex-column flex-md-row justify-content-center py-4">
+    <div class="container-fluid w-100 flex-wrap d-flex flex-column flex-md-row justify-content-center py-4">
 
         <?php
         // the query

@@ -21,6 +21,6 @@ for( i =0; i< navLi.length ; i++ ){
 }
 
 let navA = document.querySelectorAll("nav#navTop > li > a");
-for( i =0; i< navLi.length ; i++ ){
+for( i = 0; i < navLi.length ; i++ ){
     navA[i].classList.add("nav-link");
 }

@@ -924,3 +924,7 @@ li {
 .current_page_item {
     border-bottom: 5px solid #d21242;
 }
+
+.wpcf7-spinner{
+    display: none;
+    }
